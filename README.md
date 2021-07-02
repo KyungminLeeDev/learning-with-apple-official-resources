@@ -5,7 +5,7 @@
 **애플 공식 자료로 학습한 내용을 정리하는 저장소**
 
 - 공식 자료로 학습한 내용을 스스로 참고하기 위해 정리했으며, 번역이 목표가 아니므로 오역이나 잘못된 정보가 있을 수 있습니다.
-- 원본 참고를 추천드리며 가능한 링크를 남기겠습니다.
+- 원본을 참고하길 추천하며 가능한 링크를 남기겠습니다.
 - [Sungdoo](https://sungdoo.dev/about-me-en/)님의 ["공식문서 만으로 iOS 개발 배우기"](https://sungdoo.dev/programming/start-ios-development-with-offical-docs/)에서 영감을 받아 시작했습니다.
 
 ## Index
