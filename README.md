@@ -15,5 +15,6 @@
 **Swift.org**
 - Welcome to Swift
     - A Swift Tour
+        - [Playground](/.Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour.playground)
         - [1. Simple Values](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-1-simple-values.md)
 
