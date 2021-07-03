@@ -17,4 +17,4 @@
     - A Swift Tour
         - [Playground](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour.playground)
         - [1. Simple Values](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-1-simple-values.md)
-
+        - [2. Control Flow](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-2-control-flow.md)
