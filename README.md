@@ -15,7 +15,8 @@
 **Swift.org**
 - Welcome to Swift
     - A Swift Tour
-        - [Playground](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour.playground)
+        - [a-swift-tour.playground](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour.playground)
+        - [0. First program](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-0-first-program.md)
         - [1. Simple Values](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-1-simple-values.md)
         - [2. Control Flow](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-2-control-flow.md)
         - [3. Functions and Closures](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-3-functions-and-closures.md)
