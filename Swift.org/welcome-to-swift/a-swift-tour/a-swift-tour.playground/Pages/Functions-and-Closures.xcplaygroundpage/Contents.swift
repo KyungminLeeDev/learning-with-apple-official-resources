@@ -2,9 +2,9 @@
 //:
 //: ## 함수 선언, 호출
 //:
-//: - `func`로 함수 선언
-//: - 함수 호출: 함수의 이름과 소괄호 안의 인수 목록으로 함수 호출
-//: - 함수의 반환 타입과 파라미터의 이름 및 타입을 구분하기 위해 `->` 사용
+//: - `func`로 함수 선언한다.
+//: - 함수의 이름과 소괄호 안의 인수 목록으로 함수 호출한다.
+//: - 함수의 반환 타입과 파라미터의 이름 및 타입을 구분하기 위해 `->` 사용한다.
 //:
 func greet(person: String, day: String) -> String {
     return "Hello \(person), today is \(day)."
@@ -74,6 +74,7 @@ print(statistics)
 //: - 함수는 중첩될 수 있다.
 //: - 중첩된 함수는 외부 함수에서 선언된 변수에 접근할 수 있다.
 //: - 중첩된 함수를 사용해서 길거나 복잡한 함수의 코드를 정리할 수 있다.
+//:
 //: > 중첩된 함수 사용은 알겠는데, 복잡한 코드를 정리하는 좋은 예제는 아닌 듯하다.
 //:
 func returnFifteen() -> Int {
@@ -138,8 +139,7 @@ numbers.map({ (number: Int) -> Int in
 //: ## 더 간단하게 클로저 작성하기
 //:
 //: - 클로저 타입을 이미 알고 있다면, 파라미터 타입과 반환 타입을 생략할 수 있다.
-//: - 클로저의 코드가 한 줄이면, 암시적으로 코드의 값만 반환한다.
-//: > return 생략해도 된다는 의미
+//: - 클로저의 코드가 한 줄이면, 암시적으로 코드의 값만 반환한다. (return 생략해도 된다는 의미)
 //:
 let mappedNumbers = numbers.map({ number in 3 * number })
 print(mappedNumbers)
@@ -152,6 +152,7 @@ print(mappedNumbers)
 //: - 파라미터에 숫자로 접근할 수 있다.
 //: - 함수의 마지막 인수로 전달된 클로저는 소괄호 뒤에 나타낼 수 있다.
 //: - 클로저가 함수의 유일한 인수라면 소괄호를 생략할 수 있다.
+//:
 //: > `func sorted(by areInIncreasingOrder: (Int, Int) throws -> Bool) rethrows -> [Int]`
 //:
 let sortedNumbers = numbers.sorted { $0 > $1 }
