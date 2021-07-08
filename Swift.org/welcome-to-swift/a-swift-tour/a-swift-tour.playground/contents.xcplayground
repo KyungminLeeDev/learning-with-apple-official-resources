@@ -8,5 +8,6 @@
         <page name='Objects-and-Classes'/>
         <page name='Enumerations-and-Structures'/>
         <page name='Protocols-and-Extensions'/>
+        <page name='Error-Handling'/>
     </pages>
 </playground>
