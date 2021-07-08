@@ -21,7 +21,7 @@
         - [2. Control Flow](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-2-control-flow.md)
         - [3. Functions and Closures](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-3-functions-and-closures.md)
         - [4. Objects and Classes](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-4-objects-and-classes.md)
-        - Enumerations and Structures
+        - [5. Enumerations and Structures](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-5-Enumerations-and-Structures.md)
         - Protocols and Extensions
         - Error Handling
         - Generics

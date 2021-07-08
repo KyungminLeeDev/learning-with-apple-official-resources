@@ -6,5 +6,6 @@
         <page name='Control-Flow'/>
         <page name='Functions-and-Closures'/>
         <page name='Objects-and-Classes'/>
+        <page name='Enumerations-and-Structures'/>
     </pages>
 </playground>
