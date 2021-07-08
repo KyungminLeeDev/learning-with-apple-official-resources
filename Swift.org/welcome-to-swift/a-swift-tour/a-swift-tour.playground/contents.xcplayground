@@ -7,5 +7,6 @@
         <page name='Functions-and-Closures'/>
         <page name='Objects-and-Classes'/>
         <page name='Enumerations-and-Structures'/>
+        <page name='Protocols-and-Extensions'/>
     </pages>
 </playground>
