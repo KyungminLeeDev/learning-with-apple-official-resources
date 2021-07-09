@@ -23,9 +23,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8J-1E-KTq">
-                                            <rect key="frame" x="20" y="27.5" width="44" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8J-1E-KTq">
+                                            <rect key="frame" x="0.0" y="28" width="44" height="43"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="R8J-1E-KTq" secondAttribute="height" multiplier="1:1" id="47H-7J-9Je"/>
+                                                <constraint firstAttribute="width" constant="44" id="QCK-Jl-a1f"/>
+                                            </constraints>
                                             <state key="normal" backgroundImage="circle" catalog="system"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoX-eL-bLS">
@@ -43,6 +46,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="R8J-1E-KTq" firstAttribute="leading" secondItem="hmF-zo-0gR" secondAttribute="leading" id="JTC-9u-odw"/>
+                                        <constraint firstItem="R8J-1E-KTq" firstAttribute="centerY" secondItem="hmF-zo-0gR" secondAttribute="centerY" id="YyD-dl-nKd"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
