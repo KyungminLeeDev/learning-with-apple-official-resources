@@ -32,7 +32,7 @@ class ReminderDetailViewController: UITableViewController {
             case .title:
                 return nil
             case .date:
-                return UIImage(systemName: "calender.circle")
+                return UIImage(systemName: "calendar.circle")
             case .time:
                 return UIImage(systemName: "clock")
             case .notes:
