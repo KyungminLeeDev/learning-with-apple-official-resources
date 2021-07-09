@@ -8,22 +8,16 @@
 import UIKit
 
 class ReminderListCell: UITableViewCell {
-
+    typealias DoneButtonAction = () -> Void
+    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var doneButton: UIButton!
     
+    var doneButtonAction: DoneButtonAction?
     
-    
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
-//
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
+    @IBAction func doneButtonTriggered(_ sender: UIButton) {
+        doneButtonAction?()
+    }
 
 }
