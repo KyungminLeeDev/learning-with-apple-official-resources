@@ -17,6 +17,7 @@
 		563D1FB62698AA5200A93B78 /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563D1FB52698AA5200A93B78 /* ReminderListCell.swift */; };
 		563D1FB92698B4FE00A93B78 /* ReminderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563D1FB82698B4FE00A93B78 /* ReminderDetailViewController.swift */; };
 		563D1FBC2698C90300A93B78 /* ReminderListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563D1FBB2698C90300A93B78 /* ReminderListDataSource.swift */; };
+		563D1FBE2698CCC800A93B78 /* ReminderDetailViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563D1FBD2698CCC800A93B78 /* ReminderDetailViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		563D1FB52698AA5200A93B78 /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
 		563D1FB82698B4FE00A93B78 /* ReminderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailViewController.swift; sourceTree = "<group>"; };
 		563D1FBB2698C90300A93B78 /* ReminderListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListDataSource.swift; sourceTree = "<group>"; };
+		563D1FBD2698CCC800A93B78 /* ReminderDetailViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				563D1FBB2698C90300A93B78 /* ReminderListDataSource.swift */,
+				563D1FBD2698CCC800A93B78 /* ReminderDetailViewDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				563D1FB62698AA5200A93B78 /* ReminderListCell.swift in Sources */,
 				563D1F9E26983EEF00A93B78 /* AppDelegate.swift in Sources */,
 				563D1FB92698B4FE00A93B78 /* ReminderDetailViewController.swift in Sources */,
+				563D1FBE2698CCC800A93B78 /* ReminderDetailViewDataSource.swift in Sources */,
 				563D1FA026983EEF00A93B78 /* SceneDelegate.swift in Sources */,
 				563D1FB3269844FD00A93B78 /* Reminder.swift in Sources */,
 				563D1FBC2698C90300A93B78 /* ReminderListDataSource.swift in Sources */,
