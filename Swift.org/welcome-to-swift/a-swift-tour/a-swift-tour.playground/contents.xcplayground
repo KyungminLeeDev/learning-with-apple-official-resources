@@ -9,5 +9,6 @@
         <page name='Enumerations-and-Structures'/>
         <page name='Protocols-and-Extensions'/>
         <page name='Error-Handling'/>
+        <page name='Generics'/>
     </pages>
 </playground>
