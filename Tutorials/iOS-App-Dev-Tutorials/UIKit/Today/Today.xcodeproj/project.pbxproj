@@ -74,26 +74,21 @@
 		563D1F9C26983EEF00A93B78 /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				563D1FBA2698C8E600A93B78 /* DataSource */,
-				563D1FB72698B3CF00A93B78 /* ViewControllers */,
-				563D1FB42698AA1000A93B78 /* Views */,
-				563D1FB1269844CE00A93B78 /* Models */,
 				563D1F9D26983EEF00A93B78 /* AppDelegate.swift */,
 				563D1F9F26983EEF00A93B78 /* SceneDelegate.swift */,
+				563D1FA126983EEF00A93B78 /* ReminderListViewController.swift */,
+				563D1FB82698B4FE00A93B78 /* ReminderDetailViewController.swift */,
+				563D1FBB2698C90300A93B78 /* ReminderListDataSource.swift */,
+				563D1FBD2698CCC800A93B78 /* ReminderDetailViewDataSource.swift */,
+				56336F05269D381C00392F42 /* ReminderDetailEditDataSource.swift */,
+				563D1FB2269844FD00A93B78 /* Reminder.swift */,
+				563D1FB42698AA1000A93B78 /* Views */,
 				563D1FA326983EEF00A93B78 /* Main.storyboard */,
 				563D1FA626983EF000A93B78 /* Assets.xcassets */,
 				563D1FA826983EF000A93B78 /* LaunchScreen.storyboard */,
 				563D1FAB26983EF000A93B78 /* Info.plist */,
 			);
 			path = Today;
-			sourceTree = "<group>";
-		};
-		563D1FB1269844CE00A93B78 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				563D1FB2269844FD00A93B78 /* Reminder.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		563D1FB42698AA1000A93B78 /* Views */ = {
@@ -105,25 +100,6 @@
 				56336F03269D310500392F42 /* EditNotesCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		563D1FB72698B3CF00A93B78 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				563D1FA126983EEF00A93B78 /* ReminderListViewController.swift */,
-				563D1FB82698B4FE00A93B78 /* ReminderDetailViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		563D1FBA2698C8E600A93B78 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				563D1FBB2698C90300A93B78 /* ReminderListDataSource.swift */,
-				563D1FBD2698CCC800A93B78 /* ReminderDetailViewDataSource.swift */,
-				56336F05269D381C00392F42 /* ReminderDetailEditDataSource.swift */,
-			);
-			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
