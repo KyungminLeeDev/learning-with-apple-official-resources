@@ -24,12 +24,12 @@ class ReminderDetailViewController: UITableViewController {
     
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
+        guard let reminder = reminder else {
+            fatalError("No reminder found for detail view")
+        }
         if editing {
-            dataSource = ReminderDetailEditDataSource()
+            dataSource = ReminderDetailEditDataSource(reminder: reminder)
         } else {
-            guard let reminder = reminder else {
-                fatalError("No reminder found for detail view")
-            }
             dataSource = ReminderDetailViewDataSource(reminder: reminder)
         }
         tableView.dataSource = dataSource
