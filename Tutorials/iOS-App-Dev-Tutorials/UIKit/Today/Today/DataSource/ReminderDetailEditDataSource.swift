@@ -52,6 +52,34 @@ class ReminderDetailEditDataSource: NSObject {
     init(reminder: Reminder) {
         self.reminder = reminder
     }
+    
+    private func dequeueAndConfigureCell(for indexPath: IndexPath, from tableView: UITableView) -> UITableViewCell {
+        guard let section = ReminderSection(rawValue: indexPath.section) else {
+            fatalError("Section index out of range")
+        }
+        let identifier = section.cellIdentifier(for: indexPath.row)
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        
+        switch section {
+        case .title:
+            if let titleCell = cell as? EditTitleCell {
+                titleCell.configure(title: reminder.title)
+            }
+        case .dueDate:
+            if indexPath.row == 0 {
+                cell.textLabel?.text = reminder.dueDate.description
+            } else {
+                if let dueDateCell = cell as? EditDateCell {
+                    dueDateCell.configure(date: reminder.dueDate)
+                }
+            }
+        case .notes:
+            if let notesCell = cell as? EditNotesCell {
+                notesCell.configure(notes: reminder.notes)
+            }
+        }
+        return cell
+    }
 }
 
 extension ReminderDetailEditDataSource: UITableViewDataSource {
@@ -64,7 +92,7 @@ extension ReminderDetailEditDataSource: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        fatalError()
+        return dequeueAndConfigureCell(for: indexPath, from: tableView)
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
