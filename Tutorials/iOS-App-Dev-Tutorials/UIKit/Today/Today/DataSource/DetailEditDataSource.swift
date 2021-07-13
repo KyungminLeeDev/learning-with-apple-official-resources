@@ -36,3 +36,24 @@ class ReminderDetailEditDataSource: NSObject {
         }
     }
 }
+
+extension ReminderDetailEditDataSource: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return ReminderSection.allCases.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        fatalError()
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        guard let section = ReminderSection(rawValue: section) else {
+            fatalError("Section index out of range")
+        }
+        return section.displayText
+    }
+}
