@@ -80,3 +80,17 @@ Build and Run을 하면 Xocde는 선택된 타겟으로 앱을 컴파일하고, 
 
 
 ### 2. Add a View Controller
+
+Interface Builder를 사용해서 UIKit 앱의 뷰를 배치합니다. 뷰는 일반적으로 스토리보드 파일에 뷰의 모음과 뷰의 관계에 대한 정보로 저장됩니다.  
+  
+Today 앱 만들기를 시작할 시간입니다. Table View Controller를 사용하여 미리 알림 목록을 표시합니다. 스토리보드에 Table View Controller를 생성합니다.
+
+#### Step 1 ~ 6
+
+`Main.storyboard`에서 View Controller Scene을 삭제합니다.  
+  
+Library에서 Table View Controller를 드래그해서 생성하고 Attributes inspector에서 `Is Initial View Controller` 체크박스를 선택해서 이 scene을 스토리보드의 시작점으로 설정합니다.  
+  
+Build and Run을 클릭하여 시뮬레이터로 앱을 실행합니다.  
+  
+이제 빈 화면 대신 Table의 행 목록이 표시됩니다.  
