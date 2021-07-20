@@ -4,7 +4,11 @@
 - 원문: Apple Developer - [iOS App Dev Tutorials - UIKit](https://developer.apple.com/tutorials/app-dev-training)
 - [GitHub에서 보기](https://github.com/KyungminLeeDev/learning-with-apple-official-resources)
 
-# Cahpter 1. UIKit Essentials
+<br/><br/><br/>
+
+
+
+# Chapter 1. UIKit Essentials
 
 Xcode와 Interface Builder를 사용하여 적응형 인터페이스를 설계합니다.
 
@@ -48,3 +52,31 @@ UIKit의 특징
 ### Building the App
 
 이제 UIKit에 대해 자세히 알아보고 Today 앱을 미리 살펴보았으니, 앱 만들어 봅니다. 언제든 막힐때면, 코드 변경을 확인하거나, 완료된 프로젝트를 다운로드받아서 확인합니다. Xcode, Swift, UIKit에 대한 배경지식을 더 알고 싶다면 Apple Books에서 [Develop in Swift Fundamentals](https://books.apple.com/us/book/develop-in-swift-fundamentals/id1511184145)를 다운로드할 수 있습니다.
+
+<br/><br/><br/>
+
+
+
+## Creating a Storyboard App
+
+UIKit은 앱을 만들기 위한 강력한 기반을 제공합니다. 새로운 Xcode 프로젝트를 만드는 것으로 시작하고, Interface Builder를 사용하여 앱의 첫 번째 scene을 배치합니다.  
+  
+다음 스텝을 따라서 새로운 프로젝트를 시작하거나, 완료된 프로젝트를 열어서 코드를 직접 살펴보세요.
+
+### 1. Create a Project
+
+Xcode는 모든 Apple 플랫폼의 다양한 타입의 앱에 대한 템플릿을 제공합니다. 이 템플릿은 basic source file, configuration file, build setting을 포함합니다.
+
+#### Step 1 ~ 7
+
+새로운 Xcode 프로젝트를 만듭니다.
+- Product Name: Today
+- Interface: Storyboard
+  
+Build and Run으로 시뮬레이터로 앱을 실행합니다.  
+  
+Build and Run을 하면 Xocde는 선택된 타겟으로 앱을 컴파일하고, 프레임워크를 링크하고, 리소스를 번들화하고, 선택한 디바이스로 바이너리를 배치합니다. 현재 iOS App 템플릿은 빈 화면을 표시합니다.
+
+
+
+### 2. Add a View Controller
