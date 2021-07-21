@@ -121,6 +121,14 @@ extension Reminder {
   
 몇 개의 섹션만으로 Table View Controller를 root view로 추가했고 미리 알림의 세부사항을 보여주는 cell의 프로토타입을 만들었습니다. 다음은, Auto Layout이라 불리는 Interface Builder 기능을 사용할 것입니다. Auto Layout을 사용해서 동적으로 계산하고 object를 조정하는 규칙을 Prototype Cell에 적용하여 모든 방향과 서로 다른 디바이스에서 보기 좋게 될 것입니다.
 
+#### 배운 것 - SF Symbol은 사용자의 Dynamic Type 설정에 따라 자동으로 확장된다.
+
+버튼의 Title을 지우고 Background를 SF Symbol의 circle로 설정했습니다.
+
+> **Step 4**  
+>  
+> circle 아이콘과 같은 SF Symbol은 사용자의 Dynamic Type 설정에 따라 자동으로 확장됩니다.
+
 #### 배운 것 - 버튼의 최소 사이즈는 44*44pt
 
 > **Step 5**  
