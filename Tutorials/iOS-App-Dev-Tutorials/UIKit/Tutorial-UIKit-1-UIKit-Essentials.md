@@ -157,3 +157,28 @@ A. Build and Run
 A. Extension
 
 <br/><br/><br/>
+
+
+
+## Setting Constraints with Auto Layout
+
+UIKit 앱은 View의 레이아웃과 그 관계를 설명하기 위해 Constraint 기반의 접근 접근 방식을 사용합니다. Auto Layout은 당신이 선언한 Constraint을 기준으로 View 계층에 있는 모든 뷰의 사이즈와 위치를 동적으로 계산합니다.  
+  
+이 튜토리얼에서는 Auto Layout의 Constraint를 만들어서 Reminder Cell의 View를 정화하게 배치합니다.  
+
+### 1. Add Constraints with Auto Layout
+
+Auto Layout의 Constraint는 주로 View 계층의 View 사이의 관계를 설명합니다. 이 섹션에서는 `원형 버튼 view`와 그 부모인 cell의 content view 사이의 Constraint를 만듭니다.
+
+#### Step 1 ~ 7
+
+원형 버튼의 크기와 위치에 관한 Constraint를 설정했습니다. 부모 View와의 관계(위치)는 부모 View의 Constraint에 속하고, 크기에 관한 Constraint는 자신의 Constraint에 속합니다.
+
+- Content View
+    - Button
+        - Constraints
+            - width = 44
+            - aspect = 1:1
+    - Constraints
+        - Button.leading = leading
+        - Button.centerY = centerY
