@@ -94,3 +94,46 @@ Library에서 Table View Controller를 드래그해서 생성하고 Attributes i
 Build and Run을 클릭하여 시뮬레이터로 앱을 실행합니다.  
   
 이제 빈 화면 대신 Table의 행 목록이 표시됩니다.  
+
+### 3. Create a Reminder Data Source
+
+이번 섹션에서는 목록에 미리 알림을 나타내는 데이터 Model을 만듭니다. UIKit 앱의 공통 디자인 패턴인 Model-View-Controller (MVC) 디자인 패턴으로 앱을 구성합니다.  
+  
+Table View와 Cell 같은 View Object는 데이터를 시각적으로 표현합니다. Model Object는 앱의 데이터와 비즈니스 로직을 관리합니다. 당신은 View와 View Controller는 만들었습니다. 이제 Model을 만듭니다. Today 앱을 위한 Model은 `Reminder` 구조체로, 이름과 만기일 같은 프로퍼티를 나타냅니다.
+
+#### Step 1 ~ 4
+
+`Reminder.swift`파일을 새로 만들고 Reminder 데이터 Model을 위한 Reminder 구조체를 만듭니다.
+
+~~~swift
+//  Reminder.swift
+struct Reminder {
+    var title: String
+    var dueDate: Date
+    var notes: String? = nil
+    var isComplete: Bool = false
+}
+~~~
+
+#### Step 5 ~ 6
+
+Reminder을 extension하고 샘플 데이터를 static 배열로 정의합니다.  
+  
+Extension은 구조체나 클래스를 기능별로 분류하여 작고 집중되게 유지하면서 코드를 정리할 수 있게 도와줍니다.
+
+~~~swift
+//  Reminder.swift
+struct Reminder {
+    var title: String
+    var dueDate: Date
+    var notes: String? = nil
+    var isComplete: Bool = false
+}
+
+extension Reminder {
+    static var testData = [
+        // 생략...
+    ]
+}
+~~~
+
