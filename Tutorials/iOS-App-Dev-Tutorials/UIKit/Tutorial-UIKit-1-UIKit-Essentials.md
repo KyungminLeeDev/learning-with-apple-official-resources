@@ -77,9 +77,9 @@ Today 앱 만들기를 시작할 시간입니다. Table View Controller를 사�
   
 *Step 생략*  
   
-#### 배운 것 - 스토리보드의 시작점 설정하기
+#### 📝 스토리보드의 시작점 설정하기
 
-View Controller의 Attributes inspector에서 `Is Initial View Controller` 체크박스를 선택하면 스토리보드의 시작점으로 설정됩니다.
+View Controller의 Attributes inspector에서 `Is Initial View Controller` 체크박스를 선택하면 스토리보드의 시작점으로 설정된다.
 
 ### 3. Create a Reminder Data Source
 
@@ -89,13 +89,13 @@ Table View와 Cell 같은 View Object는 데이터를 시각적으로 표현합�
   
 *Step 생략*  
   
-#### 배운 것 - Extension을 활용하여 코드 정리하기
+#### 📝 Extension을 활용하여 코드 정리하기
  
 > **Step 5**  
 > 
 > Extension은 구조체나 클래스를 기능별로 분류하여 작고 집중되게 유지하면서 코드를 정리할 수 있게 도와줍니다.
 
-Reminder 구조체에 프로퍼티들을 선언하고, 샘플 데이터는 extension으로 분리하여 정의했습니다.
+Reminder 구조체에 프로퍼티들을 선언하고, 샘플 데이터는 extension으로 분리하여 정의했다.
 
 ~~~swift
 //  Reminder.swift
@@ -121,22 +121,23 @@ extension Reminder {
   
 몇 개의 섹션만으로 Table View Controller를 root view로 추가했고 미리 알림의 세부사항을 보여주는 cell의 프로토타입을 만들었습니다. 다음은, Auto Layout이라 불리는 Interface Builder 기능을 사용할 것입니다. Auto Layout을 사용해서 동적으로 계산하고 object를 조정하는 규칙을 Prototype Cell에 적용하여 모든 방향과 서로 다른 디바이스에서 보기 좋게 될 것입니다.
 
-#### 배운 것 - SF Symbol은 사용자의 Dynamic Type 설정에 따라 자동으로 확장된다.
+#### 📝 SF Symbol은 사용자의 Dynamic Type 설정에 따라 자동으로 확장됨
 
-버튼의 Title을 지우고 Background를 SF Symbol의 circle로 설정했습니다.
+버튼의 Title을 지우고 Background를 SF Symbol의 circle로 설정했다.
 
 > **Step 4**  
 >  
 > circle 아이콘과 같은 SF Symbol은 사용자의 Dynamic Type 설정에 따라 자동으로 확장됩니다.
 
-#### 배운 것 - 버튼의 최소 사이즈는 44*44pt
+iOS의 화면 확대 설정에 따라서 자동으로 아이콘의 크기가 조절된다는 의미라고 생각된다. 튜토리얼을 진행하며 확인할 수 있을 때 확인해봐야겠다.
+
+#### 📝 버튼의 최소 사이즈는 44*44pt
 
 > **Step 5**  
 > 
 > 44*44pt는 Human Interface Guidelines 에서 접근성 표준을 충족하기 위해 필요한 최소 타겟 사이즈입니다.
 
-버튼의 사이즈를 44*44pt로 설정했고, 그 근거는 
-[Human Iterface Guidelines](https://developer.apple.com/design/human-interface-guidelines/accessibility/overview/user-interaction)의 첫 문단에서 확인할 수 있습니다.
+[Human Iterface Guidelines](https://developer.apple.com/design/human-interface-guidelines/accessibility/overview/user-interaction)의 첫 문단에서 버튼의 사이즈를 44*44pt로 설정한 근거를 확인할 수 있다.
 
 > **Human Iterface Guidelines - Gestures**  
 > 
@@ -168,12 +169,16 @@ UIKit 앱은 View의 레이아웃과 그 관계를 설명하기 위해 Constrain
 
 ### 1. Add Constraints with Auto Layout
 
-Auto Layout의 Constraint는 주로 View 계층의 View 사이의 관계를 설명합니다. 이 섹션에서는 `원형 버튼 view`와 그 부모인 cell의 content view 사이의 Constraint를 만듭니다.
+Auto Layout의 Constraint는 주로 View 계층의 View 사이의 관계를 설명합니다. 이 섹션에서는 `circle button view`와 그 부모인 cell의 content view 사이의 Constraint를 만듭니다.  
+  
+*Step 생략*  
+  
+#### 📝 Circle button의 constraint 확인
 
-#### Step 1 ~ 7
+Document Outline에서 circle button 관련 Constraint를 살펴보자. 
 
-원형 버튼의 크기와 위치에 관한 Constraint를 설정했습니다. 부모 View와의 관계(위치)는 부모 View의 Constraint에 속하고, 크기에 관한 Constraint는 자신의 Constraint에 속합니다.
-
+~~~markdown
+Table View Cell
 - Content View
     - Button
         - Constraints
@@ -182,3 +187,30 @@ Auto Layout의 Constraint는 주로 View 계층의 View 사이의 관계를 설�
     - Constraints
         - Button.leading = leading
         - Button.centerY = centerY
+~~~
+
+부모 view와 관계된 constraint(위치 관련)는 부모 View의 Constraint에 속하고, button 크기에 관한 Constraint는 button의 Constraint에 속한다.  
+
+### 2. Set Constraints Between Elements
+
+캔버스의 두 view 사이에 constraint를 만들려면 view에서 다른 view로 컨트롤-드래그하면 나오는 메뉴에서 constraint의 종류를 선택하여 사용합니다. 이번 섹션에서는 button, Title label, content view 사이에 constraint를 만듭니다.
+
+*Step 생략*  
+
+#### 📝 Title Label 의 constraint 확인
+
+Document Outline에서 Title Label 관련 constraint를 살펴보자. 
+
+~~~markdown
+Table View Cell
+- Content View
+    - Title Label
+    - Constraints
+        - Title.top = top
+        - Title.leading = Button.trailing
+        - trailing >= Title.trailing
+~~~
+
+Button 과는 다르게 Label의 크기는 Constraint를 주지 않았는데, Label의 컨텐츠인 텍스트의 길이와 폰트 크기에 따라 자동으로 크기가 설정되어서 그런 것 같다.  
+  
+trailing은 부모의 trailing과 같거나 작도록 했는데, 텍스트의 길이가 짧으면 trailing이 작아지고, 크더라도 부모의 trailing는 넘기지 않도록 최댓값을 지정하는 느낌이다.
