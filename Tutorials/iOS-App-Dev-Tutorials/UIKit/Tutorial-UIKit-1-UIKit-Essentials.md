@@ -4,6 +4,19 @@
 - 원문: Apple Developer - [iOS App Dev Tutorials - UIKit](https://developer.apple.com/tutorials/app-dev-training)
 - [GitHub에서 보기](https://github.com/KyungminLeeDev/learning-with-apple-official-resources)
 
+## 📝 메모 
+
+배운 내용이나 메모는 소제목에 메모(`📝`)를 표시하여 작성하고 이곳에 링크합니다.  
+문서의 단순 번역은 `경어체`를, 직접 작성한 글은 `평어체`를 사용합니다.
+
+- [스토리보드의 시작점 설정하기](#📝-스토리보드의-시작점-설정하기)
+- [Extension을 활용하여 코드 정리하기](#📝-Extension을-활용하여-코드-정리하기)
+- [SF Symbol의 자동 확장](#📝-SF-Symbol의-자동-확장)
+- [버튼의 최소 사이즈는 44*44pt](#📝-버튼의-최소-사이즈는-44*44pt)
+- [Circle button의 constraint 확인](#📝-Circle-button의-constraint-확인)
+- [Title label의 constraint 확인](#📝-Title-label의-constraint-확인)
+- [Date label의 constraint 확인](#📝-Date-label의-constraint-확인)
+
 <br/><br/><br/>
 
 
@@ -121,7 +134,7 @@ extension Reminder {
   
 몇 개의 섹션만으로 Table View Controller를 root view로 추가했고 미리 알림의 세부사항을 보여주는 cell의 프로토타입을 만들었습니다. 다음은, Auto Layout이라 불리는 Interface Builder 기능을 사용할 것입니다. Auto Layout을 사용해서 동적으로 계산하고 object를 조정하는 규칙을 Prototype Cell에 적용하여 모든 방향과 서로 다른 디바이스에서 보기 좋게 될 것입니다.
 
-#### 📝 SF Symbol은 사용자의 Dynamic Type 설정에 따라 자동으로 확장됨
+#### 📝 SF Symbol의 자동 확장
 
 버튼의 Title을 지우고 Background를 SF Symbol의 circle로 설정했다.
 
@@ -249,3 +262,13 @@ Date.leading을 Title.leading과 동일하게 하여 Title의 Leading에 의존�
 반면에 Date.trailing은 Title과 맞추지 않고 따로 설정했는데, Title과 Date의 컨텐츠(텍스트) 길이가 다를 것이므로 이렇게 설정한 것 같다.
   
 Date.bottom은 부모의 bottom과 같거나 작도록 해서 Title과 Date의 폰트 크기가 작아져서 세로 길이가 줄어들어도 부모의 세로 길이와 충돌하지 않도록 하는 것 같다.
+
+### 4. Check Your Understanding
+
+#### Q1. view의 너비 또는 높이를 정의할 수 있는 tool은 무엇인가요?
+
+A. Add New Contraints tool
+
+#### Q2. view의 constraint에 기반하여 view 계층에서 view의 크기와 위치를 계산하는 기능은 무엇인가요?
+
+A. Auto Layout
