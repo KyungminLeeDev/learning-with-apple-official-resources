@@ -12,7 +12,7 @@
 - [스토리보드의 시작점 설정하기](#-스토리보드의-시작점-설정하기)
 - [Extension을 활용하여 코드 정리하기](#-Extension을-활용하여-코드-정리하기)
 - [SF Symbol의 자동 확장](#-SF-Symbol의-자동-확장)
-- [버튼의 최소 사이즈는 44*44pt](#-버튼의-최소-사이즈는-44*44pt)
+- [버튼의 최소 사이즈는 44*44pt](#-버튼의-최소-사이즈는-44x44pt)
 - [Circle button의 constraint 확인](#-Circle-button의-constraint-확인)
 - [Title label의 constraint 확인](#-Title-label의-constraint-확인)
 - [Date label의 constraint 확인](#-Date-label의-constraint-확인)
@@ -144,13 +144,13 @@ extension Reminder {
 
 iOS의 화면 확대 설정에 따라서 자동으로 아이콘의 크기가 조절된다는 의미라고 생각된다. 튜토리얼을 진행하며 확인할 수 있을 때 확인해봐야겠다.
 
-#### 📝 버튼의 최소 사이즈는 44*44pt
+#### 📝 버튼의 최소 사이즈는 44x44pt
 
 > **Step 5**  
 > 
 > 44*44pt는 Human Interface Guidelines 에서 접근성 표준을 충족하기 위해 필요한 최소 타겟 사이즈입니다.
 
-[Human Iterface Guidelines](https://developer.apple.com/design/human-interface-guidelines/accessibility/overview/user-interaction)의 첫 문단에서 버튼의 사이즈를 44*44pt로 설정한 근거를 확인할 수 있다.
+[Human Iterface Guidelines](https://developer.apple.com/design/human-interface-guidelines/accessibility/overview/user-interaction)의 첫 문단에서 버튼의 사이즈를 44x44pt로 설정한 근거를 확인할 수 있다.
 
 > **Human Iterface Guidelines - Gestures**  
 > 
