@@ -9,13 +9,13 @@
 배운 내용이나 메모는 소제목에 메모(`📝`)를 표시하여 작성하고 이곳에 링크합니다.  
 문서의 단순 번역은 `경어체`를, 직접 작성한 글은 `평어체`를 사용합니다.
 
-- [스토리보드의 시작점 설정하기](#📝-스토리보드의-시작점-설정하기)
-- [Extension을 활용하여 코드 정리하기](#📝-Extension을-활용하여-코드-정리하기)
-- [SF Symbol의 자동 확장](#📝-SF-Symbol의-자동-확장)
-- [버튼의 최소 사이즈는 44*44pt](#📝-버튼의-최소-사이즈는-44*44pt)
-- [Circle button의 constraint 확인](#📝-Circle-button의-constraint-확인)
-- [Title label의 constraint 확인](#📝-Title-label의-constraint-확인)
-- [Date label의 constraint 확인](#📝-Date-label의-constraint-확인)
+- [스토리보드의 시작점 설정하기](#-스토리보드의-시작점-설정하기)
+- [Extension을 활용하여 코드 정리하기](#-Extension을-활용하여-코드-정리하기)
+- [SF Symbol의 자동 확장](#-SF-Symbol의-자동-확장)
+- [버튼의 최소 사이즈는 44*44pt](#-버튼의-최소-사이즈는-44*44pt)
+- [Circle button의 constraint 확인](#-Circle-button의-constraint-확인)
+- [Title label의 constraint 확인](#-Title-label의-constraint-확인)
+- [Date label의 constraint 확인](#-Date-label의-constraint-확인)
 
 <br/><br/><br/>
 
