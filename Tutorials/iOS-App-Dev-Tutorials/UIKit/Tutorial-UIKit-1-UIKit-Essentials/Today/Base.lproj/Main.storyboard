@@ -37,9 +37,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zad-NA-wQ8">
-                                            <rect key="frame" x="72" y="56" width="36" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zad-NA-wQ8">
+                                            <rect key="frame" x="72" y="49" width="36" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -48,9 +47,13 @@
                                     <constraints>
                                         <constraint firstItem="azK-hz-hb5" firstAttribute="top" secondItem="fSf-SJ-3vo" secondAttribute="top" constant="20" symbolic="YES" id="E52-aA-HsV"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="azK-hz-hb5" secondAttribute="trailing" constant="20" symbolic="YES" id="EMP-3Y-p69"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Zad-NA-wQ8" secondAttribute="bottom" constant="20" symbolic="YES" id="UcC-0h-Txb"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zad-NA-wQ8" secondAttribute="trailing" constant="20" symbolic="YES" id="Wgl-pt-i2L"/>
                                         <constraint firstItem="azK-hz-hb5" firstAttribute="leading" secondItem="5Hl-aV-Km9" secondAttribute="trailing" constant="8" symbolic="YES" id="cJc-eS-DJr"/>
                                         <constraint firstItem="5Hl-aV-Km9" firstAttribute="leading" secondItem="fSf-SJ-3vo" secondAttribute="leading" constant="20" symbolic="YES" id="fDv-Ab-EJh"/>
+                                        <constraint firstItem="Zad-NA-wQ8" firstAttribute="leading" secondItem="azK-hz-hb5" secondAttribute="leading" id="lxE-jz-AkG"/>
                                         <constraint firstItem="5Hl-aV-Km9" firstAttribute="centerY" secondItem="fSf-SJ-3vo" secondAttribute="centerY" id="tpB-r3-NRE"/>
+                                        <constraint firstItem="Zad-NA-wQ8" firstAttribute="top" secondItem="azK-hz-hb5" secondAttribute="bottom" constant="8" symbolic="YES" id="ulT-KQ-OXc"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>

@@ -184,6 +184,8 @@ Table View Cell
         - Constraints
             - width = 44
             - aspect = 1:1
+    - Title
+    - Date
     - Constraints
         - Button.leading = leading
         - Button.centerY = centerY
@@ -193,18 +195,20 @@ Table View Cell
 
 ### 2. Set Constraints Between Elements
 
-캔버스의 두 view 사이에 constraint를 만들려면 view에서 다른 view로 컨트롤-드래그하면 나오는 메뉴에서 constraint의 종류를 선택하여 사용합니다. 이번 섹션에서는 button, Title label, content view 사이에 constraint를 만듭니다.
-
+캔버스의 두 view 사이에 constraint를 만들려면 view에서 다른 view로 컨트롤-드래그하면 나오는 메뉴에서 constraint의 종류를 선택하여 사용합니다. 이번 섹션에서는 button, Title label, content view 사이에 constraint를 만듭니다.  
+  
 *Step 생략*  
+  
+#### 📝 Title label의 constraint 확인
 
-#### 📝 Title Label 의 constraint 확인
-
-Document Outline에서 Title Label 관련 constraint를 살펴보자. 
+Document Outline에서 Title label 관련 constraint를 살펴보자. 
 
 ~~~markdown
 Table View Cell
 - Content View
-    - Title Label
+    - Button
+    - Title
+    - Date
     - Constraints
         - Title.top = top
         - Title.leading = Button.trailing
@@ -214,3 +218,34 @@ Table View Cell
 Button 과는 다르게 Label의 크기는 Constraint를 주지 않았는데, Label의 컨텐츠인 텍스트의 길이와 폰트 크기에 따라 자동으로 크기가 설정되어서 그런 것 같다.  
   
 trailing은 부모의 trailing과 같거나 작도록 했는데, 텍스트의 길이가 짧으면 trailing이 작아지고, 크더라도 부모의 trailing는 넘기지 않도록 최댓값을 지정하는 느낌이다.
+
+### 3. Add Constraints to the Date Label
+
+이번 섹션에서는 Date Label에 constraint을 추가하여 cell의 레이아웃을 완성합니다.  
+  
+*Step 생략*  
+  
+Reminder cell 안의 모든 view에 constraint을 주었습니다. 이 몇 가지 수정으로 cell이 간단하게 새로운 크기와 방향에 적응할 수 있습니다. 이것은 추가 작업 없이 right-to-left 언어도 적응할 수 있게합니다.
+
+#### 📝 Date label의 constraint 확인
+
+Document Outline에서 Date label 관련 constraint를 살펴보자. 
+
+~~~markdown
+Table View Cell
+- Content View
+    - Button
+    - Title
+    - Date
+    - Constraints
+        - trailing >= Date.trailing
+        - Date.top = Title.bottom
+        - bottom >= Date.bottom
+        - Date.leading = Title.leading
+~~~
+
+Date.leading을 Title.leading과 동일하게 하여 Title의 Leading에 의존하여 맞춰지게 했다.  
+  
+반면에 Date.trailing은 Title과 맞추지 않고 따로 설정했는데, Title과 Date의 컨텐츠(텍스트) 길이가 다를 것이므로 이렇게 설정한 것 같다.
+  
+Date.bottom은 부모의 bottom과 같거나 작도록 해서 Title과 Date의 폰트 크기가 작아져서 세로 길이가 줄어들어도 부모의 세로 길이와 충돌하지 않도록 하는 것 같다.
