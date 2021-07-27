@@ -4,18 +4,18 @@
 - 원문: Apple Developer - [iOS App Dev Tutorials - UIKit](https://developer.apple.com/tutorials/app-dev-training)
 - [GitHub에서 보기](https://github.com/KyungminLeeDev/learning-with-apple-official-resources)
 
-## 📝 메모
+## 📌 메모
 
-배운 내용이나 메모는 소제목에 메모(`📝`)를 표시하여 작성하고 이곳에 링크합니다.  
+배운 내용이나 메모는 소제목에 메모(`📌`)를 표시하여 작성하고 이곳에 링크합니다.  
 문서의 단순 번역은 `경어체`를, 직접 작성한 글은 `평어체`를 사용합니다.
 
-- [스토리보드의 시작점 설정하기](#-스토리보드의-시작점-설정하기)
-- [Extension을 활용하여 코드 정리하기](#-Extension을-활용하여-코드-정리하기)
-- [SF Symbol의 자동 확장](#-SF-Symbol의-자동-확장)
-- [버튼의 최소 사이즈는 44*44pt](#-버튼의-최소-사이즈는-44x44pt)
-- [Circle button의 constraint 확인](#-Circle-button의-constraint-확인)
-- [Title label의 constraint 확인](#-Title-label의-constraint-확인)
-- [Date label의 constraint 확인](#-Date-label의-constraint-확인)
+- [📌 스토리보드의 시작점 설정하기](#-스토리보드의-시작점-설정하기)
+- [📌 Extension을 활용하여 코드 정리하기](#-extension을-활용하여-코드-정리하기)
+- [📌 SF Symbol의 자동 확장](#-sf-symbol의-자동-확장)
+- [📌 버튼의 최소 사이즈는 44x44pt](#-버튼의-최소-사이즈는-44x44pt)
+- [📌 Circle button의 constraint 확인](#-circle-button의-constraint-확인)
+- [📌 Title label의 constraint 확인](#-title-label의-constraint-확인)
+- [📌 Date label의 constraint 확인](#-date-label의-constraint-확인)
 
 <br/><br/><br/>
 
@@ -90,7 +90,7 @@ Today 앱 만들기를 시작할 시간입니다. Table View Controller를 사�
   
 *Step 생략*  
   
-#### 📝 스토리보드의 시작점 설정하기
+#### 📌 스토리보드의 시작점 설정하기
 
 View Controller의 Attributes inspector에서 `Is Initial View Controller` 체크박스를 선택하면 스토리보드의 시작점으로 설정된다.
 
@@ -102,7 +102,7 @@ Table View와 Cell 같은 View Object는 데이터를 시각적으로 표현합�
   
 *Step 생략*  
   
-#### 📝 Extension을 활용하여 코드 정리하기
+#### 📌 Extension을 활용하여 코드 정리하기
  
 > **Step 5**  
 > 
@@ -134,7 +134,7 @@ extension Reminder {
   
 몇 개의 섹션만으로 Table View Controller를 root view로 추가했고 미리 알림의 세부사항을 보여주는 cell의 프로토타입을 만들었습니다. 다음은, Auto Layout이라 불리는 Interface Builder 기능을 사용할 것입니다. Auto Layout을 사용해서 동적으로 계산하고 object를 조정하는 규칙을 Prototype Cell에 적용하여 모든 방향과 서로 다른 디바이스에서 보기 좋게 될 것입니다.
 
-#### 📝 SF Symbol의 자동 확장
+#### 📌 SF Symbol의 자동 확장
 
 버튼의 Title을 지우고 Background를 SF Symbol의 circle로 설정했다.
 
@@ -144,7 +144,7 @@ extension Reminder {
 
 iOS의 화면 확대 설정에 따라서 자동으로 아이콘의 크기가 조절된다는 의미라고 생각된다. 튜토리얼을 진행하며 확인할 수 있을 때 확인해봐야겠다.
 
-#### 📝 버튼의 최소 사이즈는 44x44pt
+#### 📌 버튼의 최소 사이즈는 44x44pt
 
 > **Step 5**  
 > 
@@ -186,7 +186,7 @@ Auto Layout의 Constraint는 주로 View 계층의 View 사이의 관계를 설�
   
 *Step 생략*  
   
-#### 📝 Circle button의 constraint 확인
+#### 📌 Circle button의 constraint 확인
 
 Document Outline에서 circle button 관련 Constraint를 살펴보자. 
 
@@ -212,7 +212,7 @@ Table View Cell
   
 *Step 생략*  
   
-#### 📝 Title label의 constraint 확인
+#### 📌 Title label의 constraint 확인
 
 Document Outline에서 Title label 관련 constraint를 살펴보자. 
 
@@ -240,7 +240,7 @@ trailing은 부모의 trailing과 같거나 작도록 했는데, 텍스트의 �
   
 Reminder cell 안의 모든 view에 constraint을 주었습니다. 이 몇 가지 수정으로 cell이 간단하게 새로운 크기와 방향에 적응할 수 있습니다. 이것은 추가 작업 없이 right-to-left 언어도 적응할 수 있게합니다.
 
-#### 📝 Date label의 constraint 확인
+#### 📌 Date label의 constraint 확인
 
 Document Outline에서 Date label 관련 constraint를 살펴보자. 
 
