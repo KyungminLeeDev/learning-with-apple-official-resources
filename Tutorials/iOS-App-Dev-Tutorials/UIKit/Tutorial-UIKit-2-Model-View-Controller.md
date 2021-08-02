@@ -75,3 +75,17 @@ UI 오브젝트로 메시지를 보내는 코드를 사용하려면 UI 오브젝
 ### 2. Add Actions Programmatically
 
 이번 섹션에서는 미리 알림의 완료 상태를 토글 하기 위한 circle button의 action을 만듭니다. outlet을 만든 방법과 같은 방법으로 action을 만들 수 있습니다. 또한 action 메서드를 먼저 만들고, 프로그래밍으로 연결할 수 있습니다.
+
+### 3. Check Your Understanding
+
+#### Q1. UI 오브젝트를 코드의 프로퍼티에 연결하는 아이템은 무엇인가요?
+
+Outlet
+
+#### Q2. 앱에서 특정 이벤트가 발생했을 때 트리거 하는 아이템은 무엇인가요?
+
+Action
+
+#### Q3. outlet과 action이 코드와 연결됐다는 것을 어디서 확인할 수 있나요?
+
+In the code editor
