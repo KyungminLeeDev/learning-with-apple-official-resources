@@ -15,3 +15,16 @@
 
 
 # Chapter 3. Navigation
+
+미리 알림의 디테일을 보여주는 view를 만들고 내비게이션 계층에 이 view를 표시합니다.
+
+## Creating a Detail View Controller
+
+모든 미리 알림은 고유한 프로퍼티가 있습니다. 사용자가 미리 알림에 대한 디테일을 볼 수 있도록 detail view controller를 만듭니다.  
+  
+익숙한 패턴을 따릅니다. 새로운 view controller을 추가하는 것으로 시작하고, 요구되는 두 개의 table view data source 메서드를 추가합니다.
+
+### 1. Create A Reminder Detail View Controller
+
+이번 섹션에서는 새로운 reminder detail view controller를 만듭니다. 앱은 table view를 사용하여 미리 알림의 디테일을 표시할 것입니다. table view의 각 행을 설명하는 열거형을 만듭니다.
+
