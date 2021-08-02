@@ -30,6 +30,9 @@
                                                 <constraint firstAttribute="width" secondItem="5Hl-aV-Km9" secondAttribute="height" multiplier="1:1" id="sIV-rI-ZzE"/>
                                             </constraints>
                                             <state key="normal" backgroundImage="circle" catalog="system"/>
+                                            <connections>
+                                                <action selector="doneButtonTriggered:" destination="ubo-aR-Ld2" eventType="touchUpInside" id="SXM-bC-yUN"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azK-hz-hb5">
                                             <rect key="frame" x="72" y="20" width="33" height="21"/>
