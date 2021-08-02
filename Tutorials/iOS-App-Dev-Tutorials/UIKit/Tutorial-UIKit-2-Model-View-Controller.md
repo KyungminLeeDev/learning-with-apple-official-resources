@@ -89,3 +89,15 @@ Action
 #### Q3. outlet과 action이 코드와 연결됐다는 것을 어디서 확인할 수 있나요?
 
 In the code editor
+
+
+
+## Setting Up a Table View
+
+미리 알림 데이터를 목록으로 표시하기 위해서 table view controller를 만들어야 합니다. 이를 위해 하위 클래스 UITableViewController는 table view에 프로토콜과 특정 동작을 채택합니다. 그리고 UITableViewDataSource 프로토콜에서 메서드를 구현하여 table 데이터를 생성하고 관리합니다.  
+  
+starter 프로젝트를 다운받아 튜토리얼을 따라하거나, 완료된 프로젝트를 열어서 코드를 직접 살펴보세요.
+
+### 1. Add The Table View
+
+Xcode 템플릿에는 view controller의 기본 구현이 포함되어 있습니다. 이번 섹션에서는 템플릿 view controller을 리팩토링하여 reminder list 화면의 table view controller을 만듭니다.
