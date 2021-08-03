@@ -9,6 +9,7 @@
 
 배운 내용이나 메모는 소제목에 압정(`📌`) 이모지를 표시하여 작성하고 이곳에 링크합니다.
 
+- [📌 Table view cell의 Disclosure Indicator](#-table-view-cell의-disclosure-indicator)
 
 <br/><br/><br/>
 
@@ -50,3 +51,24 @@ CaseIterable
 tableView(_:numberOfRowsInSection:)
 tableView(_:cellForRowAt:)
 ~~~
+
+
+
+## Creating a Navigation Stack
+
+사용자는 목록 화면에서 디테일 화면으로 찾아갈 방법이 필요합니다. navigation controller를 추가하여 앱의 워크플로우에 detail view controller를 통합합니다. 그런 다음 UIKit에 포함된 segue 중 하나를 사용하여 화면 간의 전환을 애니메이션화할 수 있습니다.
+
+### 1. Create a Navigation Controller
+
+이번 섹션에서는 reminder list view controller를 navigation controller에 내장합니다. 그리고 미리 알림의 디테일을 보여줄 새로운 table view controller을 만듭니다. 마지막으로 사용자가 미리 알림 cell을 탭 하여 두 view controller 사이를 이동할 수 있도록 segue를 만듭니다.
+
+#### 📌 Table view cell의 Disclosure Indicator
+
+table view cell의 Accessory 메뉴에서 Disclosure Indicator를 선택하면 cell의 우측에 오른쪽 화살표 모양이 생긴다.
+
+> Step 2  
+>  
+> Disclosure Indicator는 이 cell을 탭 하면 새 scene으로 이동함을 사용자에게 알려줍니다.
+
+위에 설명돼있듯이 이 cell을 누르면 새로운 화면으로 이동하여 더 자세한 내용을 볼 수 있다는 의미로 인식할 수 있다.
+
