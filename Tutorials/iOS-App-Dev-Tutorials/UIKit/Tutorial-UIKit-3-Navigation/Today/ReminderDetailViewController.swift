@@ -47,3 +47,19 @@ class ReminderDetailViewController: UITableViewController {
         self.reminder = reminder
     }
 }
+
+extension ReminderDetailViewController {
+    static let reminderDetailCellIdentifier = "ReminderDetailCell"
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ReminderRow.allCases.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: Self.reminderDetailCellIdentifier, for: indexPath)
+        let row = ReminderRow(rawValue: indexPath.row)
+        cell.textLabel?.text = row?.displayText(for: reminder)
+        cell.imageView?.image = row?.cellImage
+        return cell
+    }
+}
