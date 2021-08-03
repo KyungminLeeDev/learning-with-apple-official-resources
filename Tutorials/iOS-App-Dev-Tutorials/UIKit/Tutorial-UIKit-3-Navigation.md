@@ -7,7 +7,7 @@
 
 ## 📱 결과물
 
-![](./Images/Tutorial-UIKit-3-Navigation.gif)
+<img src = ./Images/Tutorial-UIKit-3-Navigation.gif width="250px">
 
 ## 📌 메모
 
