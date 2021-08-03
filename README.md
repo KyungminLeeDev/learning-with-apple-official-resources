@@ -22,7 +22,7 @@
 
 - [UIKit Essentials](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-1-UIKit-Essentials.md): Xcode와 Interface Builder를 사용하여 적응형 인터페이스를 설계합니다.
 - [Model-View-Controller](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-2-Model-View-Controller.md): 첫 Table view를 만들면서 UI 요소와 코드를 연결합니다.
-- Navigation
+- [Navigation](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-3-Navigation.md): 미리 알림의 디테일을 보여주는 view를 만들고 이 view를 내비게이션 계층 안에서 표시합니다.
 - Table Views and Data Sources
 - Editable Cells
 - Modality
