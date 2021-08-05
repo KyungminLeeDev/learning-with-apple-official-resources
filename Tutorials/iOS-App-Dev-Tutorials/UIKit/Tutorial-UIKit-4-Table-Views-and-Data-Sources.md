@@ -9,8 +9,8 @@
 
 배운 내용이나 메모는 소제목에 압정(`📌`) 이모지를 표시하여 작성하고 이곳에 링크합니다.
 
-- [📌 @escaping annotation](#-@escaping-annotation)
-- [📌 클래스 Initializer의 호출 순서](-클래스-initializer의 호출 순서)
+- [📌 @escaping annotation](#-escaping-annotation)
+- [📌 클래스 Initializer의 호출 순서](#-클래스-initializer의 호출 순서)
 
 <br/><br/><br/>
 
