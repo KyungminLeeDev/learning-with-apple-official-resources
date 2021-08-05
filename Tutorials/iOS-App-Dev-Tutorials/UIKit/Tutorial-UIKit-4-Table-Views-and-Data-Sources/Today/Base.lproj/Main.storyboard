@@ -104,6 +104,81 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditTitleCell" id="KM6-mN-c4X" customClass="EditTitleCell" customModule="Today" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="68" width="414" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KM6-mN-c4X" id="Ck8-dz-6wb">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TextField" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f28-eB-iCw">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="34.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="f28-eB-iCw" secondAttribute="bottom" id="Ul0-EH-rAQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="f28-eB-iCw" secondAttribute="trailing" constant="20" symbolic="YES" id="Utv-o1-RnR"/>
+                                        <constraint firstItem="f28-eB-iCw" firstAttribute="leading" secondItem="Ck8-dz-6wb" secondAttribute="leading" constant="20" symbolic="YES" id="jrj-4H-5mQ"/>
+                                        <constraint firstItem="f28-eB-iCw" firstAttribute="top" secondItem="Ck8-dz-6wb" secondAttribute="top" id="nxv-jt-gFC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleTextField" destination="f28-eB-iCw" id="y2H-WI-fYD"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditDateCell" rowHeight="216" id="Aqg-Ck-TE3" customClass="EditDateCell" customModule="Today" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="102.5" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Aqg-Ck-TE3" id="hbB-J6-9tM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="NiZ-wL-rZV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                        </datePicker>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NiZ-wL-rZV" firstAttribute="top" secondItem="hbB-J6-9tM" secondAttribute="top" id="4PK-rJ-Das"/>
+                                        <constraint firstAttribute="bottom" secondItem="NiZ-wL-rZV" secondAttribute="bottom" id="DiT-3K-Sde"/>
+                                        <constraint firstAttribute="trailing" secondItem="NiZ-wL-rZV" secondAttribute="trailing" id="omr-sC-pU9"/>
+                                        <constraint firstItem="NiZ-wL-rZV" firstAttribute="leading" secondItem="hbB-J6-9tM" secondAttribute="leading" id="rrE-2U-0lq"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="datePicker" destination="NiZ-wL-rZV" id="KtI-Wi-KBr"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditNotesCell" rowHeight="216" id="emZ-eF-scT" customClass="EditNotesCell" customModule="Today" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="318.5" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="emZ-eF-scT" id="U23-9k-qXh">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qku-bP-cpW">
+                                            <rect key="frame" x="20" y="11" width="374" height="194"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="194" id="45a-Fz-3Au"/>
+                                            </constraints>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qku-bP-cpW" firstAttribute="leading" secondItem="U23-9k-qXh" secondAttribute="leadingMargin" id="Bpg-dO-h0q"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="qku-bP-cpW" secondAttribute="trailing" id="FNS-2B-YGv"/>
+                                        <constraint firstItem="qku-bP-cpW" firstAttribute="top" secondItem="U23-9k-qXh" secondAttribute="topMargin" id="RaM-zd-cG0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="notesTextView" destination="qku-bP-cpW" id="s7L-D4-Lqb"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="2qV-8K-mG6" id="avB-dB-qAz"/>
@@ -137,6 +212,9 @@
     </scenes>
     <resources>
         <image name="circle" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
