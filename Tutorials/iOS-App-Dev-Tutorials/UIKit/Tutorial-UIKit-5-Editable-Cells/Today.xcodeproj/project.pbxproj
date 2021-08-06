@@ -20,6 +20,7 @@
 		564F3A9126BBE9B9008F79AD /* EditNotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564F3A9026BBE9B9008F79AD /* EditNotesCell.swift */; };
 		565869CA26B7C35C005053C5 /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565869C926B7C35C005053C5 /* ReminderListCell.swift */; };
 		565FBBAB26A7F07300A7B753 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FBBAA26A7F07300A7B753 /* Reminder.swift */; };
+		56878B8926BCDD3100140624 /* ReminderDetailEditDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56878B8826BCDD3100140624 /* ReminderDetailEditDataSource.swift */; };
 		56F85A0E26B8121E00EC28E4 /* ReminderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F85A0D26B8121E00EC28E4 /* ReminderDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		564F3A9026BBE9B9008F79AD /* EditNotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesCell.swift; sourceTree = "<group>"; };
 		565869C926B7C35C005053C5 /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
 		565FBBAA26A7F07300A7B753 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		56878B8826BCDD3100140624 /* ReminderDetailEditDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailEditDataSource.swift; sourceTree = "<group>"; };
 		56F85A0D26B8121E00EC28E4 /* ReminderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				564F3A8726BBAC97008F79AD /* ReminderListDataSource.swift */,
 				56F85A0D26B8121E00EC28E4 /* ReminderDetailViewController.swift */,
 				564F3A8926BBD3AE008F79AD /* ReminderDetailViewDataSource.swift */,
+				56878B8826BCDD3100140624 /* ReminderDetailEditDataSource.swift */,
 				5605F33A26A6A7E9003C7731 /* AppDelegate.swift */,
 				5605F33C26A6A7E9003C7731 /* SceneDelegate.swift */,
 				5605F34026A6A7E9003C7731 /* Main.storyboard */,
@@ -180,6 +183,7 @@
 				564F3A8F26BBE96F008F79AD /* EditDateCell.swift in Sources */,
 				565FBBAB26A7F07300A7B753 /* Reminder.swift in Sources */,
 				564F3A8826BBAC97008F79AD /* ReminderListDataSource.swift in Sources */,
+				56878B8926BCDD3100140624 /* ReminderDetailEditDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
