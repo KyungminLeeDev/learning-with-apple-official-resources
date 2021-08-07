@@ -30,10 +30,20 @@ class ReminderDetailViewController: UITableViewController {
         }
         if editing {
             dataSource = ReminderDetailEditDataSource(reminder: reminder)
+            navigationItem.title = NSLocalizedString("Edit Reminder", comment: "edit reminder")
+            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelButtonTrigger))
         } else {
             dataSource = ReminderDetailViewDataSource(reminder: reminder)
+            navigationItem.title = NSLocalizedString("View Reminder", comment: "view reminder")
+            navigationItem.leftBarButtonItem = nil
+            editButtonItem.isEnabled = true
         }
         tableView.dataSource = dataSource
         tableView.reloadData()
+    }
+    
+    @objc
+    func cancelButtonTrigger() {
+        setEditing(false, animated: true)
     }
 }
