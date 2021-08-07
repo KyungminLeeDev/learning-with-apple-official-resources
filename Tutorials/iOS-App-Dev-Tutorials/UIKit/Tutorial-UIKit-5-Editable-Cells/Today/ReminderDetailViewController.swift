@@ -29,7 +29,9 @@ class ReminderDetailViewController: UITableViewController {
             fatalError("No reminder found for detail view")
         }
         if editing {
-            dataSource = ReminderDetailEditDataSource(reminder: reminder)
+            dataSource = ReminderDetailEditDataSource(reminder: reminder) { reminder in
+                self.editButtonItem.isEnabled = true
+            }
             navigationItem.title = NSLocalizedString("Edit Reminder", comment: "edit reminder")
             navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelButtonTrigger))
         } else {
