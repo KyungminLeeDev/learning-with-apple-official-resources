@@ -163,7 +163,6 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="194" id="45a-Fz-3Au"/>
                                             </constraints>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <color key="textColor" systemColor="labelColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -173,6 +172,7 @@
                                         <constraint firstItem="qku-bP-cpW" firstAttribute="leading" secondItem="U23-9k-qXh" secondAttribute="leadingMargin" id="Bpg-dO-h0q"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="qku-bP-cpW" secondAttribute="trailing" id="FNS-2B-YGv"/>
                                         <constraint firstItem="qku-bP-cpW" firstAttribute="top" secondItem="U23-9k-qXh" secondAttribute="topMargin" id="RaM-zd-cG0"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="qku-bP-cpW" secondAttribute="bottom" id="tCP-Bw-v3F"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
