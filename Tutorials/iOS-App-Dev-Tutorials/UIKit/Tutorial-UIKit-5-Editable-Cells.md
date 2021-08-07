@@ -9,7 +9,7 @@
 
 배운 내용이나 메모는 소제목에 압정(`📌`) 이모지를 표시하여 작성하고 이곳에 링크합니다.
 
-- [📌 Table View에 cell 등록하기](#-table-View에-cell-등록하기)
+- [📌 Table View에 cell 등록하기](#-table-view에-cell-등록하기)
 - [📌 Date Picker의 Sytle 변경해주기](#-date-picker의-sytle-변경해주기)
 - [📌 Cell의 edit control 표시하지 않기](#-cell의-edit-control-표시하지-않기)
 
