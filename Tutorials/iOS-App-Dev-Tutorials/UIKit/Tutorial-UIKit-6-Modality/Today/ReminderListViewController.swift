@@ -8,10 +8,11 @@
 import UIKit
 
 class ReminderListViewController: UITableViewController {
+    static let showDetailSegueIdentifier = "ShowReminderDetailSegue"
+    static let mainStoryboardName = "Main"
+    static let detailViewControllerIdentifier = "ReminderDetailViewController"
     
     private var reminderListDataSource: ReminderListDataSource?
-    
-    static let showDetailSegueIdentifier = "ShowReminderDetailSegue"
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Self.showDetailSegueIdentifier,
@@ -33,5 +34,28 @@ class ReminderListViewController: UITableViewController {
         super.viewDidLoad()
         reminderListDataSource = ReminderListDataSource()
         tableView.dataSource = reminderListDataSource
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if let navigationController = navigationController,
+           navigationController.isToolbarHidden {
+            navigationController.setToolbarHidden(false, animated: animated)
+        }
+    }
+    
+    @IBAction func addButtonTriggered(_ sender: UIBarButtonItem) {
+        addReminder()
+    }
+    
+    private func addReminder() {
+        let storyboard = UIStoryboard(name: Self.mainStoryboardName, bundle: nil)
+        let detailViewController: ReminderDetailViewController = storyboard.instantiateViewController(identifier: Self.detailViewControllerIdentifier)
+        let reminder = Reminder(title: "New Reminder", dueDate: Date())
+        detailViewController.configure(with: reminder, isNew: true, addAction: { reminder in
+            
+        })
+        let navigationController = UINavigationController(rootViewController: detailViewController)
+        present(navigationController, animated: true, completion: nil)
     }
 }
