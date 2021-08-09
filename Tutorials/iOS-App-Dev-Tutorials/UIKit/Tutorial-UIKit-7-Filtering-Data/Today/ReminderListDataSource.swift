@@ -34,15 +34,30 @@ class ReminderListDataSource: NSObject {
     }
     
     func update(_ reminder: Reminder, at row: Int) {
-        Reminder.testData[row] = reminder
+        let index = self.index(for: row)
+        Reminder.testData[index] = reminder
+    }
+    
+    func delete(at row: Int) {
+        let index = self.index(for: row)
+        Reminder.testData.remove(at: index)
     }
     
     func reminder(at row: Int) -> Reminder {
         return filteredReminders[row]
     }
     
-    func add(_ reminder: Reminder) {
+    func add(_ reminder: Reminder) -> Int? {
         Reminder.testData.insert(reminder, at: 0)
+        return filteredReminders.firstIndex(where: { $0.id == reminder.id })
+    }
+    
+    func index(for filteredIndex: Int) -> Int {
+        let filteredReminder = filteredReminders[filteredIndex]
+        guard let index = Reminder.testData.firstIndex(where: { $0.id == filteredReminder.id }) else {
+            fatalError("Couldn't retrieve index in source array")
+        }
+        return index
     }
 }
 
@@ -66,6 +81,18 @@ extension ReminderListDataSource: UITableViewDataSource {
             tableView.reloadRows(at: [indexPath], with: .none)
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else {
+            return
+        }
+        delete(at: indexPath.row)
+        tableView.performBatchUpdates({
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }) { (_) in
+            tableView.reloadData()
+        }
     }
 }
 

@@ -26,7 +26,7 @@
 - [Table Views and Data Sources](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-4-Table-Views-and-Data-Sources.md): 데이터에 접근하고 관리하는 패턴을 배우고 미리 알림 데이터를 보여주는 커스텀 cell을 만듭니다.
 - [Editable Cells](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-5-Editable-Cells.md): 여러 data source의 데이터 흐름을 제어하여 편집가능한 미리 알림을 지원합니다.
 - [Modality](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-6-Modality.md): Modal view에서 작업을 분리하고 새 미리 알림을 저장합니다.
-- Filtering Data
+- [Filtering Data](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-7-Filtering-Data.md): 함수형 프로그래밍 패턴을 적용하여 데이터 배열을 고유한 view로 필터링합니다.
 - Design and Animation
 - System Frameworks
 
