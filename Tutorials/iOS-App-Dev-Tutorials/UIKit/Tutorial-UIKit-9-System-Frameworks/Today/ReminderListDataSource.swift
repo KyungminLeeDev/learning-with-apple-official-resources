@@ -80,23 +80,45 @@ class ReminderListDataSource: NSObject {
         }
     }
     
-    func update(_ reminder: Reminder, at row: Int) {
-        let index = self.index(for: row)
-        reminders[index] = reminder
+    func update(_ reminder: Reminder, at row: Int, completion: (Bool) -> Void) {
+        saveReminder(reminder) { (id) in
+            let success = id != nil
+            let index = self.index(for: row)
+            reminders[index] = reminder
+            completion(success)
+        }
     }
     
-    func delete(at row: Int) {
-        let index = self.index(for: row)
-        reminders.remove(at: index)
+    func delete(at row: Int, completion: (Bool) -> Void) {
+        let reminder = self.reminder(at: row)
+        removeReminder(with: reminder.id) { (success) in
+            if success {
+                let index = self.index(for: row)
+                reminders.remove(at: index)
+            }
+            completion(success)
+        }
     }
     
     func reminder(at row: Int) -> Reminder {
         return filteredReminders[row]
     }
     
-    func add(_ reminder: Reminder) -> Int? {
-        reminders.insert(reminder, at: 0)
-        return filteredReminders.firstIndex(where: { $0.id == reminder.id })
+    func add(_ reminder: Reminder, completion: (Int?) -> Void) {
+        saveReminder(reminder) { (id) in
+            if let id = id {
+                let reminder = Reminder(id: id,
+                                        title: reminder.title,
+                                        dueDate: reminder.dueDate,
+                                        notes: reminder.notes,
+                                        isComplete: reminder.isComplete)
+                reminders.insert(reminder, at: 0)
+                let index = filteredReminders.firstIndex { $0.id == id}
+                completion(index)
+            } else {
+                completion(nil)
+            }
+        }
     }
     
     func index(for filteredIndex: Int) -> Int {
@@ -121,11 +143,15 @@ extension ReminderListDataSource: UITableViewDataSource {
         }
         let currentReminder = reminder(at: indexPath.row)
         let dateText = currentReminder.dueDateTimeText(for: filter)
+        
         cell.configure(title: currentReminder.title, dateText: dateText, isDone: currentReminder.isComplete) {
             var modifiedReminder = currentReminder
             modifiedReminder.isComplete.toggle()
-            self.update(modifiedReminder, at: indexPath.row)
-            self.reminderCompletedAction?(indexPath.row)
+            self.update(modifiedReminder, at: indexPath.row) { success in
+                if success {
+                    self.reminderCompletedAction?(indexPath.row)
+                }
+            }
         }
         return cell
     }
@@ -134,13 +160,18 @@ extension ReminderListDataSource: UITableViewDataSource {
         guard editingStyle == .delete else {
             return
         }
-        delete(at: indexPath.row)
-        tableView.performBatchUpdates({
-            tableView.deleteRows(at: [indexPath], with: .automatic)
-        }) { (_) in
-            tableView.reloadData()
+        delete(at: indexPath.row) { success in
+            if success {
+                DispatchQueue.main.async {
+                    tableView.performBatchUpdates({
+                        tableView.deleteRows(at: [indexPath], with: .automatic)
+                    }) { (_) in
+                        tableView.reloadData()
+                    }
+                    self.reminderDeletedAction?()
+                }
+            }
         }
-        reminderDeletedAction?()
     }
 }
 
@@ -220,6 +251,74 @@ extension ReminderListDataSource {
                 return reminder
             }
             self.remindersChangedAction?()
+        }
+    }
+    
+    private func saveReminder(_ reminder: Reminder, completion: (String?) -> Void) {
+        guard isAvailable else {
+            completion(nil)
+            return
+        }
+        
+        readReminder(with: reminder.id) { (ekReminder) in
+            let ekReminder = ekReminder ?? EKReminder(eventStore: self.eventStore)
+            ekReminder.title = reminder.title
+            ekReminder.notes = reminder.notes
+            ekReminder.isCompleted = reminder.isComplete
+            ekReminder.calendar = self.eventStore.defaultCalendarForNewReminders()
+            ekReminder.alarms?.forEach { alarm in
+                if let absoluteDate = alarm.absoluteDate {
+                    let comparison = Locale.current.calendar.compare(reminder.dueDate, to: absoluteDate, toGranularity: .minute)
+                    if comparison != .orderedSame {
+                        ekReminder.removeAlarm(alarm)
+                    }
+                }
+            }
+            if !ekReminder.hasAlarms {
+                ekReminder.addAlarm(EKAlarm(absoluteDate: reminder.dueDate))
+            }
+            
+            do {
+                try self.eventStore.save(ekReminder, commit: true)
+                completion(ekReminder.calendarItemIdentifier)
+            } catch {
+                completion(nil)
+            }
+        }
+    }
+    
+    private func readReminder(with id: String, completion: (EKReminder?) -> Void) {
+        guard isAvailable else {
+            completion(nil)
+            return
+        }
+        
+        guard let calendarItem = eventStore.calendarItem(withIdentifier: id),
+              let ekReminder = calendarItem as? EKReminder else {
+            completion(nil)
+            return
+        }
+        
+        completion(ekReminder)
+    }
+    
+    private func removeReminder(with id: String, completion: (Bool) -> Void) {
+        guard isAvailable else {
+            completion(false)
+            return
+        }
+        
+        readReminder(with: id) { (ekReminder) in
+            if let ekReminder = ekReminder {
+                do {
+                    try self.eventStore.remove(ekReminder, commit: true)
+                    completion(true)
+                } catch {
+                    completion(false)
+                }
+            } else {
+                completion(false)
+            }
         }
     }
 }
