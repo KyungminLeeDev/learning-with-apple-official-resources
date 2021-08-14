@@ -2,7 +2,7 @@
 //  EditTitleCell.swift
 //  Today
 //
-//  Created by Kyungmin Lee on 2021/07/13.
+//  Created by Kyungmin Lee on 2021/08/05.
 //
 
 import UIKit
@@ -19,7 +19,7 @@ class EditTitleCell: UITableViewCell {
         titleTextField.delegate = self
     }
     
-    func configure(title: String, changeAction: @escaping TitleChangeAction ) {
+    func configure(title: String, changeAction: @escaping TitleChangeAction) {
         titleTextField.text = title
         self.titleChangeAction = changeAction
     }

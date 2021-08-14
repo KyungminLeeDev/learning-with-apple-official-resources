@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Today
 //
-//  Created by Kyungmin Lee on 2021/07/09.
+//  Created by Kyungmin Lee on 2021/07/20.
 //
 
 import UIKit
@@ -30,9 +30,9 @@ class ReminderListViewController: UITableViewController {
            let indexPath = tableView.indexPath(for: cell) {
             let rowIndex = indexPath.row
             guard let reminder = reminderListDataSource?.reminder(at: rowIndex) else {
-                fatalError("Couldin't find data source for reminder list.")
+                fatalError("Couldn't find data source for reminder list.")
             }
-            destination.configure(with: reminder, editAction:  { reminder in
+            destination.configure(with: reminder, editAction: { reminder in
                 self.reminderListDataSource?.update(reminder, at: rowIndex) { success in
                     if success {
                         DispatchQueue.main.async {
@@ -58,7 +58,7 @@ class ReminderListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        reminderListDataSource = ReminderListDataSource(remindercompltedAction: { reminderIndex in
+        reminderListDataSource = ReminderListDataSource(reminderCompletedAction: { reminderIndex in
             DispatchQueue.main.async {
                 self.tableView.reloadRows(at: [IndexPath(row: reminderIndex, section: 0)], with: .automatic)
                 self.refreshProgressView()
@@ -92,7 +92,7 @@ class ReminderListViewController: UITableViewController {
             navigationController.setToolbarHidden(false, animated: animated)
         }
     }
-
+    
     @IBAction func addButtonTriggered(_ sender: UIBarButtonItem) {
         addReminder()
     }
@@ -100,7 +100,7 @@ class ReminderListViewController: UITableViewController {
     @IBAction func segmentControlChanged(_ sender: UISegmentedControl) {
         reminderListDataSource?.filter = filter
         tableView.reloadData()
-        self.refreshProgressView()
+        refreshProgressView()
         refreshBackground()
     }
     

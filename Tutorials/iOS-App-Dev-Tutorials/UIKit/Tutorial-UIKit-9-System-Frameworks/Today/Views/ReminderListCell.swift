@@ -2,7 +2,7 @@
 //  ReminderListCell.swift
 //  Today
 //
-//  Created by Kyungmin Lee on 2021/07/10.
+//  Created by Kyungmin Lee on 2021/08/02.
 //
 
 import UIKit
@@ -27,5 +27,4 @@ class ReminderListCell: UITableViewCell {
         doneButton.setBackgroundImage(image, for: .normal)
         self.doneButtonAction = doneButtonAction
     }
-
 }

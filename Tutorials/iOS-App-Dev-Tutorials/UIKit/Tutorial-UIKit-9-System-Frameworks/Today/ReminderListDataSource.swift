@@ -2,7 +2,7 @@
 //  ReminderListDataSource.swift
 //  Today
 //
-//  Created by Kyungmin Lee on 2021/07/10.
+//  Created by Kyungmin Lee on 2021/08/05.
 //
 
 import UIKit
@@ -41,7 +41,7 @@ class ReminderListDataSource: NSObject {
         guard filteredReminders.count > 0 else {
             return 1
         }
-        let numComplete: Double = filteredReminders.reduce(0) { $0 + ($1.isComplete ? 1: 0) }
+        let numComplete: Double = filteredReminders.reduce(0) { $0 + ($1.isComplete ? 1 : 0)}
         return numComplete / Double(filteredReminders.count)
     }
     
@@ -52,8 +52,8 @@ class ReminderListDataSource: NSObject {
     private var reminderDeletedAction: ReminderDeletedAction?
     private var remindersChangedAction: RemindersChangedAction?
     
-    init(remindercompltedAction: @escaping ReminderCompletedAction, reminderDeletedAction: @escaping ReminderDeletedAction, remindersChangedAction: @escaping RemindersChangedAction) {
-        self.reminderCompletedAction = remindercompltedAction
+    init(reminderCompletedAction: @escaping ReminderCompletedAction, reminderDeletedAction: @escaping ReminderDeletedAction, remindersChangedAction: @escaping RemindersChangedAction) {
+        self.reminderCompletedAction = reminderCompletedAction
         self.reminderDeletedAction = reminderDeletedAction
         self.remindersChangedAction = remindersChangedAction
         super.init()
@@ -61,7 +61,8 @@ class ReminderListDataSource: NSObject {
         requestAccess { (authorized) in
             if authorized {
                 self.readAllReminders()
-                NotificationCenter.default.addObserver(self, selector: #selector(self.storeChanged(_:)), name: .EKEventStoreChanged, object: self.eventStore)
+                NotificationCenter.default.addObserver(self, selector: #selector(self.storeChanged(_:)),
+                                                       name: .EKEventStoreChanged, object: self.eventStore)
             }
         }
     }
@@ -98,7 +99,7 @@ class ReminderListDataSource: NSObject {
             completion(success)
         }
     }
-
+    
     func reminder(at row: Int) -> Reminder {
         return filteredReminders[row]
     }
@@ -112,7 +113,7 @@ class ReminderListDataSource: NSObject {
                                         notes: reminder.notes,
                                         isComplete: reminder.isComplete)
                 reminders.insert(reminder, at: 0)
-                let index = filteredReminders.firstIndex { $0.id == id }
+                let index = filteredReminders.firstIndex { $0.id == id}
                 completion(index)
             } else {
                 completion(nil)
@@ -142,6 +143,7 @@ extension ReminderListDataSource: UITableViewDataSource {
         }
         let currentReminder = reminder(at: indexPath.row)
         let dateText = currentReminder.dueDateTimeText(for: filter)
+        
         cell.configure(title: currentReminder.title, dateText: dateText, isDone: currentReminder.isComplete) {
             var modifiedReminder = currentReminder
             modifiedReminder.isComplete.toggle()
@@ -174,15 +176,16 @@ extension ReminderListDataSource: UITableViewDataSource {
 }
 
 extension Reminder {
+    
     static let timeFormatter: DateFormatter = {
         let timeFormatter = DateFormatter()
         timeFormatter.dateStyle = .none
         timeFormatter.timeStyle = .short
         return timeFormatter
     }()
-    
+
     static let futureDateFormatter: DateFormatter = {
-       let dateFormatter = DateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .short
         return dateFormatter
@@ -194,7 +197,7 @@ extension Reminder {
         dateFormatter.dateFormat = String(format: format, "hh:mm a")
         return dateFormatter
     }()
-    
+
     func dueDateTimeText(for filter: ReminderListDataSource.Filter) -> String {
         let isInToday = Locale.current.calendar.isDateInToday(dueDate)
         switch filter {
@@ -240,7 +243,7 @@ extension ReminderListDataSource {
                 guard let dueDate = $0.alarms?.first?.absoluteDate else {
                     return nil
                 }
-                let reminder = Reminder(id: $0.calendarItemExternalIdentifier,
+                let reminder = Reminder(id: $0.calendarItemIdentifier,
                                         title: $0.title,
                                         dueDate: dueDate,
                                         notes: $0.notes,
@@ -265,8 +268,8 @@ extension ReminderListDataSource {
             ekReminder.calendar = self.eventStore.defaultCalendarForNewReminders()
             ekReminder.alarms?.forEach { alarm in
                 if let absoluteDate = alarm.absoluteDate {
-                    let comparision = Locale.current.calendar.compare(reminder.dueDate, to: absoluteDate, toGranularity: .minute)
-                    if comparision != .orderedSame {
+                    let comparison = Locale.current.calendar.compare(reminder.dueDate, to: absoluteDate, toGranularity: .minute)
+                    if comparison != .orderedSame {
                         ekReminder.removeAlarm(alarm)
                     }
                 }
@@ -281,7 +284,6 @@ extension ReminderListDataSource {
             } catch {
                 completion(nil)
             }
-            
         }
     }
     
@@ -310,6 +312,7 @@ extension ReminderListDataSource {
             if let ekReminder = ekReminder {
                 do {
                     try self.eventStore.remove(ekReminder, commit: true)
+                    completion(true)
                 } catch {
                     completion(false)
                 }

@@ -2,7 +2,7 @@
 //  ReminderDetailViewDataSource.swift
 //  Today
 //
-//  Created by Kyungmin Lee on 2021/07/10.
+//  Created by Kyungmin Lee on 2021/08/05.
 //
 
 import UIKit
@@ -20,9 +20,9 @@ class ReminderDetailViewDataSource: NSObject {
             formatter.timeStyle = .short
             return formatter
         }()
-        
+
         static let dateFormatter: DateFormatter = {
-            let formatter = DateFormatter()
+           let formatter = DateFormatter()
             formatter.timeStyle = .none
             formatter.dateStyle = .long
             return formatter
@@ -35,7 +35,7 @@ class ReminderDetailViewDataSource: NSObject {
             case .date:
                 guard let date = reminder?.dueDate else { return nil }
                 if Locale.current.calendar.isDateInToday(date) {
-                    return NSLocalizedString("Today", comment: "Today for date desription")
+                    return NSLocalizedString("Today", comment: "Today for date description")
                 }
                 return Self.dateFormatter.string(from: date)
             case .time:

@@ -1,8 +1,8 @@
 //
-//  DetailViewController.swift
+//  ReminderDetailViewController.swift
 //  Today
 //
-//  Created by Kyungmin Lee on 2021/07/10.
+//  Created by Kyungmin Lee on 2021/08/02.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class ReminderDetailViewController: UITableViewController {
     private var reminderAddAction: ReminderChangeAction?
     private var isNew = false
     
-    func configure(with reminder: Reminder, isNew: Bool = false, addAction: ReminderChangeAction? = nil, editAction: ReminderChangeAction? =  nil) {
+    func configure(with reminder: Reminder, isNew: Bool = false, addAction: ReminderChangeAction? = nil, editAction: ReminderChangeAction? = nil) {
         self.reminder = reminder
         self.isNew = isNew
         self.reminderAddAction = addAction
@@ -58,7 +58,7 @@ class ReminderDetailViewController: UITableViewController {
         } else {
             dataSource = ReminderDetailViewDataSource(reminder: reminder)
         }
-        navigationItem.title = NSLocalizedString("View Reminder", comment: "view reminder nav title")
+        navigationItem.title = NSLocalizedString("View Reminder", comment: "view reminder")
         navigationItem.leftBarButtonItem = nil
         editButtonItem.isEnabled = true
     }
@@ -97,6 +97,7 @@ class ReminderDetailViewController: UITableViewController {
             tempReminder = nil
             setEditing(false, animated: true)
         }
+        
     }
 }
 

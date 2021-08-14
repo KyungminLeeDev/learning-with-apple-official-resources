@@ -5,10 +5,6 @@
 - 원문: Apple Developer - [iOS App Dev Tutorials - UIKit](https://developer.apple.com/tutorials/app-dev-training)
 - [GitHub에서 보기](https://github.com/KyungminLeeDev/learning-with-apple-official-resources)
 
-## 📱 결과물
-
-<img src = ./Images/Tutorial-UIKit-3-Navigation.gif width="250px">
-
 ## 📌 메모
 
 배운 내용이나 메모는 소제목에 압정(`📌`) 이모지를 표시하여 작성하고 이곳에 링크합니다.

@@ -1,8 +1,8 @@
 //
-//  DetailEditDataSource.swift
+//  ReminderDetailEditDataSource.swift
 //  Today
 //
-//  Created by Kyungmin Lee on 2021/07/13.
+//  Created by Kyungmin Lee on 2021/08/06.
 //
 
 import UIKit
@@ -18,7 +18,7 @@ class ReminderDetailEditDataSource: NSObject {
         var displayText: String {
             switch self {
             case .title:
-                return "Title"
+                return "title"
             case .dueDate:
                 return "Date"
             case .notes:

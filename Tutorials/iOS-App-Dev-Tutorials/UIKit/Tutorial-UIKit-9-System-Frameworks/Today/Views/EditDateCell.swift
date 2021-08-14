@@ -2,7 +2,7 @@
 //  EditDateCell.swift
 //  Today
 //
-//  Created by Kyungmin Lee on 2021/07/13.
+//  Created by Kyungmin Lee on 2021/08/05.
 //
 
 import UIKit
@@ -16,10 +16,9 @@ class EditDateCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         datePicker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
     }
-
+    
     func configure(date: Date, changeAction: @escaping DateChangeAction) {
         datePicker.date = date
         self.dateChangeAction = changeAction
