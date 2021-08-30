@@ -4,11 +4,14 @@
 
 **애플 공식 자료로 학습한 내용을 정리하는 저장소**
 
-- 공식 자료로 학습한 내용을 스스로 참고하기 위해 정리했으며, 번역이 목표가 아니므로 오역이나 잘못된 정보가 있을 수 있습니다.
+- 공식 자료를 학습하고 정리했으며 잘못된 정보가 있을 수 있습니다.
+- 문서의 단순 번역은 `경어체`를, 직접 작성한 내용은 `평어체`를 사용합니다.
 - 원문을 참고하길 추천하며 가능한 링크를 남기겠습니다.
-- [Sungdoo](https://sungdoo.dev/about-me-en/)님의 ["공식문서 만으로 iOS 개발 배우기"](https://sungdoo.dev/programming/start-ios-development-with-offical-docs/)를 보고 시작했습니다.
+- 배운 내용이나 메모는 소제목에 압정(`📌`) 이모지를 표시하여 작성하고 링크합니다.
 
 <br/><br/><br/>
+
+
 
 ## Documentation
 
@@ -21,9 +24,11 @@
 #### Networking
 
 - [URL Loading System](./Documentation/Foundation/URL-Loading-System/URL-Loading-System.md): URL과 상호작용하고 표준 인터넷 프로토콜을 사용하여 서버와 통신합니다.
-    - 📄 [Fetching Website Data into Memory](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory.md): URL session에서 data task를 생성하여 데이터를 메모리에 곧장 수신합니다.
+    - Article [Fetching Website Data into Memory](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md): URL session에서 data task를 생성하여 데이터를 메모리에 직접 수신합니다.
+        - [📌 Receive Results with a Completion Handler 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-results-with-a-completion-handler-샘플-프로젝트)
+        - [📌 Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-transfer-details-and-results-with-a-delegate-샘플-프로젝트)
 
-
+<br/><br/><br/>
 
 
 ## iOS App Dev Tutorials
@@ -43,7 +48,6 @@
 - [System Frameworks](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-9-System-Frameworks.md): 이벤트 저장소에 데이터를 저장할 때 Today 앱과 EventKit의 미리 알림을 동기화합니다.
 
 ## SwiftUI
-
 
 <br/><br/><br/>
 
