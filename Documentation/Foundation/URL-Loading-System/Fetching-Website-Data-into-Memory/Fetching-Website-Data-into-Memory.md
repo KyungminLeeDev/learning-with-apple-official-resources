@@ -176,11 +176,13 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 
 - 프로젝트 생성시 만들어진 ViewController을 사용한다.
 - ViewController에 WebKit View를 추가하고 아웃렛을 생성한다.
+
 ~~~swift
 @IBOutlet var webView: WKWebView!
 ~~~
 
 - WebKit View 하단에 버튼 2개 `Apple`, `Developer`를 추가하고 터치 액션을 추가한다.
+
 ~~~swift
 @IBAction func touchUpAppleButton(_ sender: UIButton) {
 }
@@ -189,9 +191,10 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 }
 ~~~
 
-### 3. 코드
+#### 3. 코드
 
 - 문서의 startLoad() 메서드를 가져와서 url을 매개변수로 받도록 수정한다.
+
 ~~~swift
 func startLoad(with url: String) {
     let url = URL(string: url)!
@@ -218,6 +221,7 @@ func startLoad(with url: String) {
 ~~~
 
 - 버튼을 누르면 애플 홈페이지, 애플 개발자의 해당 문서 페이지를 로드한다.
+
 ~~~swift
 @IBAction func touchUpAppleButton(_ sender: UIButton) {
     startLoad(with: "https://www.apple.com/kr/")
@@ -228,6 +232,7 @@ func startLoad(with url: String) {
 ~~~
 
 - 에러 핸들링은 특별한 처리 없이 디버깅 메시지를 출력한다. (실제 프로젝트에서는 적절한 처리를 해줘야겠지?!)
+
 ~~~swift
 func handleClientError(_ error: Error?) {
     print(">> error: \(error.debugDescription)")
@@ -238,7 +243,7 @@ func handleServerError(_ response: URLResponse?) {
 }
 ~~~
 
-### 4. 동작
+#### 4. 동작
 
 `Apple` 버튼을 누르면 애플 홈페이지로, `Developer`을 누르면 애플 개발자의 해당 문서 페이지가 webView에 띄워진다.  
   
@@ -258,11 +263,13 @@ func handleServerError(_ response: URLResponse?) {
 
 - 프로젝트 생성시 만들어진 ViewController을 사용한다.
 - ViewController에 WebKit View를 추가하고 아웃렛을 생성한다.
+
 ~~~swift
 @IBOutlet var webView: WKWebView!
 ~~~
 
 - WebKit View 하단에 버튼 `Load`를 추가하고 아웃렛과 터치 액션을 추가한다.
+
 ~~~swift
 @IBOutlet var loadButton: UIButton!
 @IBAction func touchUpLoadButton(_ sender: UIButton) {
@@ -272,6 +279,7 @@ func handleServerError(_ response: URLResponse?) {
 #### 3. 코드
 
 - 문서의 코드를 가져와서 Load 버튼을 누르면 startLoad() 메서드를 호출한다.
+
 ~~~swift
 class ViewController: UIViewController {
     @IBOutlet var webView: WKWebView!
@@ -305,6 +313,7 @@ class ViewController: UIViewController {
 
 - ViewController를 익스텐션하여 URLSessionDataDelegate 프로토콜을 채택하고 델리게이트 메서드를 이곳으로 옮긴다.
     - URLSessionDelegate 프로토콜을 채택하면 동작하지 않는다!!! 사용된 델리게이트 메서드는 URLSessionDataDelegate의 메서드다.
+    
 ~~~swift
 extension ViewController: URLSessionDataDelegate {
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse,
