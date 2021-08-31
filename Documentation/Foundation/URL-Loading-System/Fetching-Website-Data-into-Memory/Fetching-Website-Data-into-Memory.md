@@ -166,7 +166,7 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 
 배운 내용을 샘플 프로젝트로 만들어 확인해보자.
 
-### 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/ReceiveResultsWithACompletionHandler)
+### 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./ReceiveResultsWithACompletionHandler)
 
 #### 1. 프로젝트 구성
 
@@ -248,7 +248,7 @@ func handleServerError(_ response: URLResponse?) {
 
 
 
-### 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/ReceiveTransferDetailsAndResultsWithADelegate)
+### 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./ReceiveTransferDetailsAndResultsWithADelegate)
 
 #### 1. 프로젝트 구성
 
