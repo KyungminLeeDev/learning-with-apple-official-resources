@@ -162,13 +162,13 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 
 
 
-# 샘플 프로젝트
+## 📌 샘플 프로젝트
 
 배운 내용을 샘플 프로젝트로 만들어 확인해보자.
 
-## 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./ReceiveResultsWithACompletionHandler)
+### 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./ReceiveResultsWithACompletionHandler)
 
-### 1. 스토리보드 구성
+#### 1. 스토리보드 구성
 
 - Xcode로 새 iOS 프로젝트를 만든다.
 - 프로젝트 생성시 만들어진 ViewController을 사용한다.
@@ -188,7 +188,7 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 }
 ~~~
 
-### 2. 코드
+#### 2. 코드
 
 - 문서의 startLoad() 메서드를 가져와서 url을 매개변수로 받도록 수정한다.
 
@@ -240,7 +240,7 @@ func handleServerError(_ response: URLResponse?) {
 }
 ~~~
 
-### 3. 동작
+#### 3. 동작
 
 `Apple` 버튼을 누르면 애플 홈페이지로, `Developer`을 누르면 애플 개발자의 해당 문서 페이지가 webView에 띄워진다.  
   
@@ -250,9 +250,9 @@ func handleServerError(_ response: URLResponse?) {
 
 
 
-## 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./ReceiveTransferDetailsAndResultsWithADelegate)
+### 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./ReceiveTransferDetailsAndResultsWithADelegate)
 
-### 1. 스토리보드 구성
+#### 1. 스토리보드 구성
 
 - Xcode로 새 iOS 프로젝트를 만든다.
 - 프로젝트 생성시 만들어진 ViewController을 사용한다.
@@ -270,7 +270,7 @@ func handleServerError(_ response: URLResponse?) {
 }
 ~~~
 
-### 2. 코드
+#### 2. 코드
 
 - 문서의 코드를 가져와서 Load 버튼을 누르면 startLoad() 메서드를 호출한다.
 
@@ -343,6 +343,6 @@ extension ViewController: URLSessionDataDelegate {
 }
 ~~~
 
-### 3. 동작
+#### 3. 동작
 
 `Load`을 누르면 애플 개발자의 해당 문서 페이지가 webView에 띄워진다.
