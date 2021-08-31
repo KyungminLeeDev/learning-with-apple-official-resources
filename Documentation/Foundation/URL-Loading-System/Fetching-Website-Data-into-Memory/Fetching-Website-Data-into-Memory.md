@@ -41,11 +41,11 @@ session이 있으면 `dataTask()` 메서드 중 하나로 data task를 생성합
 
 ![](https://docs-assets.developer.apple.com/published/c7124fb5d7/bf4501ff-82b2-4dd4-9ec3-243ef0e70d21.png)
 
-completion hanlder를 사용하는 data task를 생성하려면 `URLSession`의 `dataTask(with:)` 메서드를 호출합니다. completion handler는 세가지 작업을 해야합니다:
+completion hanlder를 사용하는 data task를 생성하려면 `URLSession`의 `dataTask(with:)` 메서드를 호출합니다. completion handler는 세가지 작업을 해야합니다.
 
-    1. `error` 파라미터가 `nil`인지 확인합니다. 아니라면 전송 에러가 발생한 것입니다. 에러를 처리하고 종료합니다.
-    2. `response` 파라미터를 확인하여 statue code가 성공을 나타내는지 확인하고 MIME 타입이 예상 값인지 확인합니다. 아니라면 서버 에러를 처리하고 종료합니다.
-    3. 필요에 따라 `data` 인스턴스를 사용합니다.
+1. `error` 파라미터가 `nil`인지 확인합니다. 아니라면 전송 에러가 발생한 것입니다. 에러를 처리하고 종료합니다.
+2. `response` 파라미터를 확인하여 statue code가 성공을 나타내는지 확인하고 MIME 타입이 예상 값인지 확인합니다. 아니라면 서버 에러를 처리하고 종료합니다.
+3. 필요에 따라 `data` 인스턴스를 사용합니다.
 
 `Listing 1`은 URL의 컨텐츠를 가져오는 `startLoad()` 메서드를 보여줍니다. `URLSession` 클래스의 `shared` 인스턴스를 사용하여 결과를 completion handler에 전달하는 data task를 생성하는 것으로 시작합니다. 로컬 에러와 서버에러를 확인한 후 이 handler는 data를 string으로 변환하고 이를 사용하여 WKWebView outlet을 채웁니다. 물론 가져온 데이터를 데이터 모델로 parsing하는 것과 같이 다른 용도로 사용할 수 있습니다.  
   
@@ -162,18 +162,15 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 
 
 
-## 샘플 프로젝트
+# 샘플 프로젝트
 
 배운 내용을 샘플 프로젝트로 만들어 확인해보자.
 
-### 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./ReceiveResultsWithACompletionHandler)
+## 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./ReceiveResultsWithACompletionHandler)
 
-#### 1. 프로젝트 구성
+### 1. 스토리보드 구성
 
 - Xcode로 새 iOS 프로젝트를 만든다.
-
-#### 2. 스토리보드 구성
-
 - 프로젝트 생성시 만들어진 ViewController을 사용한다.
 - ViewController에 WebKit View를 추가하고 아웃렛을 생성한다.
 
@@ -191,7 +188,7 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 }
 ~~~
 
-#### 3. 코드
+### 2. 코드
 
 - 문서의 startLoad() 메서드를 가져와서 url을 매개변수로 받도록 수정한다.
 
@@ -243,7 +240,7 @@ func handleServerError(_ response: URLResponse?) {
 }
 ~~~
 
-#### 4. 동작
+### 3. 동작
 
 `Apple` 버튼을 누르면 애플 홈페이지로, `Developer`을 누르면 애플 개발자의 해당 문서 페이지가 webView에 띄워진다.  
   
@@ -253,14 +250,11 @@ func handleServerError(_ response: URLResponse?) {
 
 
 
-### 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./ReceiveTransferDetailsAndResultsWithADelegate)
+## 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./ReceiveTransferDetailsAndResultsWithADelegate)
 
-#### 1. 프로젝트 구성
+### 1. 스토리보드 구성
 
 - Xcode로 새 iOS 프로젝트를 만든다.
-
-#### 2. 스토리보드 구성
-
 - 프로젝트 생성시 만들어진 ViewController을 사용한다.
 - ViewController에 WebKit View를 추가하고 아웃렛을 생성한다.
 
@@ -276,7 +270,7 @@ func handleServerError(_ response: URLResponse?) {
 }
 ~~~
 
-#### 3. 코드
+### 2. 코드
 
 - 문서의 코드를 가져와서 Load 버튼을 누르면 startLoad() 메서드를 호출한다.
 
@@ -313,7 +307,7 @@ class ViewController: UIViewController {
 
 - ViewController를 익스텐션하여 URLSessionDataDelegate 프로토콜을 채택하고 델리게이트 메서드를 이곳으로 옮긴다.
     - URLSessionDelegate 프로토콜을 채택하면 동작하지 않는다!!! 사용된 델리게이트 메서드는 URLSessionDataDelegate의 메서드다.
-    
+
 ~~~swift
 extension ViewController: URLSessionDataDelegate {
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse,
@@ -349,6 +343,6 @@ extension ViewController: URLSessionDataDelegate {
 }
 ~~~
 
-#### 4. 동작
+### 3. 동작
 
 `Load`을 누르면 애플 개발자의 해당 문서 페이지가 webView에 띄워진다.
