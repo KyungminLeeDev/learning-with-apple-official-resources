@@ -69,6 +69,7 @@ UIFont를 사용하여 앱에서 폰트의 특성에 접근합니다. 또한 레
 </details>
 
 - *Sample Code* [Creating Self-Sizing Table View Cells](./Documentation/UIKIt/UIFont/Creating-Self-Sizing-Table-View-Cells.md)
+    - [Sample Code Project](./Documentation/UIKIt/UIFont/CreatingSelfSizingTableViewCells)
 
 
 <br/><br/><br/>
