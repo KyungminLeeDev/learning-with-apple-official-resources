@@ -56,7 +56,7 @@ Label은 컨텐츠(텍스트)의 크기에 따라 Intrinsic Size가 자동으로
   
 Laeding, Trailing, Top Constraint만 적절히 설정한다.
 
-![](./Images/AutoLayout.png)
+![](./GettingTheFontSizingPreference/Images/AutoLayout.png)
 
 프로젝트 셋팅이 완료됐다. 이제 기능을 추가한다.
 
@@ -88,7 +88,7 @@ accessiblityLabel.text = "isAccessibilityCategory? \(UIApplication.shared.prefer
 
 시뮬레이터로 확인해 보자.
 
-![](./Images/CurrentFontSize.png)
+![](./GettingTheFontSizingPreference/Images/CurrentFontSize.png)
 
 텍스트 크기는 L(Large)이고, 접근성 크기가 아닌 것을 확인할 수 있다.
 
@@ -140,6 +140,6 @@ deinit {
 
 `Xcode - Open Developer Tool - Accessibility Inspector`를 사용하면 앱을 실행한 상태에서 텍스트 크리 설정을 간단히 변경해가며 확인할 수 있다.
 
-![](./Images/GettingTheFontSizingPreference_Demo.gif)
+![](./GettingTheFontSizingPreference/Images/GettingTheFontSizingPreference_Demo.gif)
 
 이제 슬라이더를 옮겨가며 텍스트 크기와 접근성 크기 여부를 실시간으로 확인할 수 있다.
