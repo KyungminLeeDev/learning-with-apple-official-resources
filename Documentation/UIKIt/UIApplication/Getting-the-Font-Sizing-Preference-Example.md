@@ -54,7 +54,7 @@ Xcode에서 새 iOS App 프로젝트를 생성한다.
 
 Label은 컨텐츠(텍스트)의 크기에 따라 Intrinsic Size가 자동으로 계산되므로 오토 레이아웃을 설정할 때 위치에 관한 제약만 주면 된다.
   
-Laeding, Trailing, Top Constraint만 적절히 설정한다.
+Leading, Trailing, Top Constraint만 적절히 설정한다.
 
 ![](./GettingTheFontSizingPreference/Images/AutoLayout.png)
 
@@ -98,7 +98,7 @@ accessiblityLabel.text = "isAccessibilityCategory? \(UIApplication.shared.prefer
 
 ## 변경한 텍스트 크기 설정값을 바로 표시하기
 
-위 예제에서는 사용자가 옵션을 변경한다면 바로 표시 되지 않고, 앱을 껏다 켜야만 변경한 옵션을 볼 수 있다.  
+위 예제에서는 사용자가 옵션을 변경한다면 바로 표시되지 않고, 앱을 재실행 해야만 변경한 옵션을 볼 수 있다.  
 물론 텍스트의 크기 자체는 iOS에서 자동으로 적용되므로 바로 크기가 변하지만,  
 어떤 옵션으로 변경했는지 Label에 표시하는 기능은 직접 만든 기능이므로, 변경 즉시 업데이트하려면 추가 처리가 필요하다.
   
