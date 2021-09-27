@@ -76,6 +76,7 @@ UIFont를 사용하여 앱에서 폰트의 특성에 접근합니다. 또한 레
 > The centralized point of control and coordination for apps running in iOS.
 
 - *Topic* [Getting the Font Sizing Preference](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference.md)
+    - [🧑🏻‍💻 텍스트 크기 설정값 가져오기 예제](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference-Example.md)
 
 <br/><br/><br/>
 
