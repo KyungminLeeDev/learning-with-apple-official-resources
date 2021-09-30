@@ -59,6 +59,13 @@ UIKit 프레임워크는 iOS 또는 tvOS 앱을 위한 필수 기반을 제공�
 
 </details>
 
+#### UIApplication
+
+> The centralized point of control and coordination for apps running in iOS.
+
+- *Topic* [Getting the Font Sizing Preference](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference.md)
+    - [🧑🏻‍💻 텍스트 크기 설정값 가져오기 예제](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference-Example.md)
+
 #### UIFont
 
 <details>
@@ -71,12 +78,9 @@ UIFont를 사용하여 앱에서 폰트의 특성에 접근합니다. 또한 레
 - *Sample Code* [Creating Self-Sizing Table View Cells](./Documentation/UIKIt/UIFont/Creating-Self-Sizing-Table-View-Cells.md)
     - [Sample Code Project](./Documentation/UIKIt/UIFont/CreatingSelfSizingTableViewCells)
 
-#### UIApplication
+#### UIView
 
-> The centralized point of control and coordination for apps running in iOS.
-
-- *Topic* [Getting the Font Sizing Preference](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference.md)
-    - [🧑🏻‍💻 텍스트 크기 설정값 가져오기 예제](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference-Example.md)
+- *Topics* [Working with Layout Guides](./Documentation/UIKIt/UIView/Working-with-Layout-Guides.md)
 
 <br/><br/><br/>
 
