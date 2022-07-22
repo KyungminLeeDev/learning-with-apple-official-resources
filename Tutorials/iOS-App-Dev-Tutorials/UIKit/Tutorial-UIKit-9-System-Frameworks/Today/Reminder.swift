@@ -14,3 +14,4 @@ struct Reminder {
     var notes: String? = nil
     var isComplete: Bool = false
 }
+
