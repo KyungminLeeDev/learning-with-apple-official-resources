@@ -8,8 +8,6 @@
 import UIKit
 
 class ReminderDetailEditDataSource: NSObject {
-    
-
     typealias ReminderChangeAction = (Reminder) -> Void
     
     enum ReminderSection: Int, CaseIterable {
