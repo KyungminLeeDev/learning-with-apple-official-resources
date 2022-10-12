@@ -90,7 +90,7 @@ accessiblityLabel.text = "isAccessibilityCategory? \(UIApplication.shared.prefer
   
 텍스트 크기는 L(Large)이고, 접근성 크기가 아닌 것을 확인할 수 있다.
 
-![./GettingTheFontSizingPreference/Images/CurrentFontSize.png]
+![](./GettingTheFontSizingPreference/Images/CurrentFontSize.png)
 
 
 
