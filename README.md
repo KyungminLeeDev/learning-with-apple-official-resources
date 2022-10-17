@@ -9,24 +9,27 @@
 - 원문을 참고하길 추천하며 가능한 링크를 남기겠습니다.
 - 배운 내용이나 메모는 소제목에 압정(`📌`) 이모지를 표시하여 작성하고 링크합니다.
 
+<br/><br/><br/>         
+
+
+
+## Developer Documentation
+
+- [Foundation](./Documentation/Foundation/Foundation.md) `필수적인 데이터 타입, 컬렉션, 운영체제 서비스에 접근하여 앱을 위한 기본 기능 계층을 정의합니다.`
+    - [URL Loading System](./Documentation/Foundation/URL-Loading-System/URL-Loading-System.md) `URL과 상호작용하고 표준 인터넷 프로토콜을 사용하여 서버와 통신합니다.`
+        - `Article` [Fetching Website Data into Memory](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md) `URL session에서 data task를 생성하여 데이터를 메모리에 직접 수신합니다.`
+            - [📌 Receive Results with a Completion Handler 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-results-with-a-completion-handler-샘플-프로젝트)
+            - [📌 Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-transfer-details-and-results-with-a-delegate-샘플-프로젝트)
+
+
 <br/><br/><br/>
 
+- [Foundation](./Documentation/Foundation/Foundation.md)
+    - [URL Loading System](./Documentation/Foundation/URL-Loading-System/URL-Loading-System.md)
+        - `Article` [Fetching Website Data into Memory](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md)
+            - 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-results-with-a-completion-handler-샘플-프로젝트)
+            - 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-transfer-details-and-results-with-a-delegate-샘플-프로젝트)
 
-
-## Documentation
-
-### [Foundation](./Documentation/Foundation/Foundation.md) *Framework*
-
-> 필수적인 데이터 타입, 컬렉션, 운영체제 서비스에 접근하여 앱을 위한 기본 기능 계층을 정의합니다.
-
-#### Networking
-
-- [URL Loading System](./Documentation/Foundation/URL-Loading-System/URL-Loading-System.md)
-    > URL과 상호작용하고 표준 인터넷 프로토콜을 사용하여 서버와 통신합니다.
-    - *Article* [Fetching Website Data into Memory](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md)
-        > URL session에서 data task를 생성하여 데이터를 메모리에 직접 수신합니다.
-        - [📌 Receive Results with a Completion Handler 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-results-with-a-completion-handler-샘플-프로젝트)
-        - [📌 Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-transfer-details-and-results-with-a-delegate-샘플-프로젝트)
 
 <br/><br/><br/>
 
