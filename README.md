@@ -15,64 +15,18 @@
 
 ## Developer Documentation
 
-- [Foundation](./Documentation/Foundation/Foundation.md) `필수적인 데이터 타입, 컬렉션, 운영체제 서비스에 접근하여 앱을 위한 기본 기능 계층을 정의합니다.`
-    - [URL Loading System](./Documentation/Foundation/URL-Loading-System/URL-Loading-System.md) `URL과 상호작용하고 표준 인터넷 프로토콜을 사용하여 서버와 통신합니다.`
-        - `Article` [Fetching Website Data into Memory](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md) `URL session에서 data task를 생성하여 데이터를 메모리에 직접 수신합니다.`
-            - [📌 Receive Results with a Completion Handler 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-results-with-a-completion-handler-샘플-프로젝트)
-            - [📌 Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-transfer-details-and-results-with-a-delegate-샘플-프로젝트)
-
-
-<br/><br/><br/>
-
 - [Foundation](./Documentation/Foundation/Foundation.md)
     - [URL Loading System](./Documentation/Foundation/URL-Loading-System/URL-Loading-System.md)
         - `Article` [Fetching Website Data into Memory](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md)
             - 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-results-with-a-completion-handler-샘플-프로젝트)
             - 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-transfer-details-and-results-with-a-delegate-샘플-프로젝트)
-
-
-<br/><br/><br/>
-
-
-
-### [Swift](./Documentation/Swift/Swift.md) *Framework*
-
-> 강력한 오픈 언어를 사용하여 앱을 구성합니다.
-
-#### Data Flow and Control Flow
-
-- *Article* [Preventing Timing Problems When Using Closures](./Documentation/Swift/Preventing-Timing-Problems-When-Using-Closures.md)
-    > 클로저에 대한 다양한 API 호출이 앱에 어떤 영향을 미칠 수 있는지 이해합니다.
-    - [📌 비동기 호출의 결과를 잘못 사용하는 예](./Documentation/Swift/Preventing-Timing-Problems-When-Using-Closures.md/#-비동기-호출의-결과를-잘못-사용하는-예)
-
-
-<br/><br/><br/>
-
-
-
-### [UIKit](./Documentation/UIKIt/UIKit.md) *Framework*
-
-<details>
-<summary> iOS 또는 tvOS 앱을 위한 그래픽적인, 이벤트 주도 사용자 인터페이스를 구성하고 다룹니다. </summary>
-
-UIKit 프레임워크는 iOS 또는 tvOS 앱을 위한 필수 기반을 제공합니다. 인터페이스 구현을 위한 윈도우와 뷰 아키텍처, 멀티 터치와 그 외의 입력 유형을 위한 이벤트 처리 기반, 사용자, 시스템, 앱 간의 상호 작용을 관리하는데 필요한 메인 런 루프 등을 제공합니다. 프레임워크가 제공하는 다른 기능은 애니메이션 지원, 문서 지원, 그리기와 출력 지원, 현재 기기에 관한 정보, 텍스트 관리와 디스플레이, 검색 지원, 접근성 지원, 앱 확장 지원, 리소스 관리가 있습니다.
-
-> Important  
-> 별도의 표시가 없는 한 앱의 메인 스레드 도는 메인 디스패치 큐에서만 UIKit 클래스를 사용하세요. 이 규칙은 특별히 UIResponder에서 파생된 클래스나 앱의 사용자 인터페이스를 다루는데 관련된 클래스에 적용됩니다.
-
-</details>
-
-#### UIFont
-
-<details>
-<summary> 폰트의 특성에 대한 접근을 제공하는 오브젝트입니다. </summary>
-
-UIFont를 사용하여 앱에서 폰트의 특성에 접근합니다. 또한 레이아웃 중에 사용되는 글리프 정보에 대한 접근을 시스템에 제공합니다. Font 오브젝트는 immutable(불변) 하므로 앱의 여러 스레드에서 사용하기에 안전합니다.
-
-</details>
-
-- *Sample Code* [Creating Self-Sizing Table View Cells](./Documentation/UIKIt/UIFont/Creating-Self-Sizing-Table-View-Cells.md)
-    - [Sample Code Project](./Documentation/UIKIt/UIFont/CreatingSelfSizingTableViewCells)
+- [Swift](./Documentation/Swift/Swift.md)
+    - `Article` [Preventing Timing Problems When Using Closures](./Documentation/Swift/Preventing-Timing-Problems-When-Using-Closures.md) 
+        - 📌 [비동기 호출의 결과를 잘못 사용하는 예](./Documentation/Swift/Preventing-Timing-Problems-When-Using-Closures.md/#-비동기-호출의-결과를-잘못-사용하는-예)
+- [UIKit](./Documentation/UIKIt/UIKit.md)
+    - `Class` [UIFont](./Documentation/UIKIt/UIFont/UIFont.md)
+        - `Sample Code` [Creating Self-Sizing Table View Cells](./Documentation/UIKIt/UIFont/Creating-Self-Sizing-Table-View-Cells.md)
+            - [Sample Code Project](./Documentation/UIKIt/UIFont/CreatingSelfSizingTableViewCells)
 
 #### UIApplication
 
