@@ -16,7 +16,7 @@
 ## Developer Documentation
 
 - [Foundation](./Documentation/Foundation/Foundation.md)
-    - [URL Loading System](./Documentation/Foundation/URL-Loading-System/URL-Loading-System.md)
+    - `API Collection` [URL Loading System](./Documentation/Foundation/URL-Loading-System/URL-Loading-System.md)
         - `Article` [Fetching Website Data into Memory](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md)
             - 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-results-with-a-completion-handler-샘플-프로젝트)
             - 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./Documentation/Foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-transfer-details-and-results-with-a-delegate-샘플-프로젝트)
@@ -27,13 +27,10 @@
     - `Class` [UIFont](./Documentation/UIKIt/UIFont/UIFont.md)
         - `Sample Code` [Creating Self-Sizing Table View Cells](./Documentation/UIKIt/UIFont/Creating-Self-Sizing-Table-View-Cells.md)
             - [Sample Code Project](./Documentation/UIKIt/UIFont/CreatingSelfSizingTableViewCells)
-
-#### UIApplication
-
-> The centralized point of control and coordination for apps running in iOS.
-
-- *Topic* [Getting the Font Sizing Preference](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference.md)
-    - [🧑🏻‍💻 텍스트 크기 설정값 가져오기 예제](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference-Example.md)
+    - `Class` [UIApplication](./Documentation/UIKIt/UIApplication/uiapplication.md)
+        - `Topic` [Managing the preferred content size](./Documentation/UIKIt/UIApplication/uiapplication.md#managing-the-preferred-content-size)
+        - `Instance Property` [preferredContentSizeCategory](./Documentation/UIKIt/UIApplication/1623048-preferredcontentsizecategory.md)
+        - 🧑🏻‍💻 [텍스트 크기 설정값 가져오기 예제](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference-Example.md)
 
 <br/><br/><br/>
 
