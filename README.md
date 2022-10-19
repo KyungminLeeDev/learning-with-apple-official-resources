@@ -29,10 +29,9 @@
             - [Sample Code Project](./Documentation/UIKIt/UIFont/CreatingSelfSizingTableViewCells)
     - `Class` [UIApplication](./Documentation/UIKIt/UIApplication/uiapplication.md)
         - `Topic` [Managing the preferred content size](./Documentation/UIKIt/UIApplication/uiapplication.md#managing-the-preferred-content-size)
-        - `Instance Property` [preferredContentSizeCategory](./Documentation/UIKIt/UIApplication/1623048-preferredcontentsizecategory.md)
         - 🧑🏻‍💻 [텍스트 크기 설정값 가져오기 예제](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference-Example.md)
 
-<br/><br/><br/>
+<br/><br/><br/> 🄿🅁 Ⓟⓡ
 
 
 
