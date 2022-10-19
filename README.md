@@ -15,7 +15,7 @@
 
 ## Developer Documentation
 
-- [Foundation](./Documentation/Foundation/foundation.md)
+- [Foundation](./Documentation/foundation/foundation.md)
     - `API Collection` [URL Loading System](./Documentation/foundation/URL-Loading-System/URL-Loading-System.md)
         - `Article` [Fetching Website Data into Memory](./Documentation/foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md)
             - 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./Documentation/foundation/URL-Loading-System/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-results-with-a-completion-handler-샘플-프로젝트)
