@@ -1,9 +1,3 @@
-# [공식문서로 iOS 배우기] Fetching Website Data into Memory
-
-- [GitHub Repository](https://github.com/KyungminLeeDev/learning-with-apple-official-resources)
-- 공식 자료를 학습하고 정리했으며 잘못된 정보가 있을 수 있습니다.
-- 문서의 단순 번역은 `경어체`를, 직접 작성한 내용은 `평어체`를 사용합니다.
-- 원문: Documentation > Foundation > URL Loading System > [Fetching Website Data into Memory](https://developer.apple.com/documentation/foundation/url_loading_system/fetching_website_data_into_memory)
 
 ## 📌 메모
 
@@ -16,7 +10,8 @@
 
 
 
-# Fetching Website Data into Memory
+# [Fetching Website Data into Memory](https://developer.apple.com/documentation/foundation/url_loading_system/fetching_website_data_into_memory)
+
 
 URL session에서 data task를 생성하여 데이터를 메모리에 직접 수신합니다.
 
