@@ -4,6 +4,8 @@
 
 필수적인 데이터 타입, 컬렉션, 운영체제 서비스에 접근하여 앱을 위한 기본 기능 계층을 정의합니다.
 
+<br>
+
 ## Overview
 
 > The Foundation framework provides a base layer of functionality for apps and frameworks, including data storage and persistence, text processing, date and time calculations, sorting and filtering, and networking. The classes, protocols, and data types defined by Foundation are used throughout the macOS, iOS, watchOS, and tvOS SDKs.
