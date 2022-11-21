@@ -52,21 +52,21 @@ URL session 인스턴스를 사용하여 태스크를 생성합니다. 요구 �
 >
 > 1. Verify that the *error* parameter is *nil*. If not, a transport error has occurred; handle the error and exit.
 >
-> 2. Check the response parameter to verify that the status code indicates success and that the MIME type is an expected value. If not, handle the server error and exit.
+> 2. Check the *response* parameter to verify that the status code indicates success and that the MIME type is an expected value. If not, handle the server error and exit.
 >
-> 3. Use the data instance as needed.
+> 3. Use the *data* instance as needed.
 
 컴플리션 핸들러를 사용하는 데이터 태스크를 생성하려면 URLSession의 `dataTask(with:)` 메서드를 호출합니다. 컴플리션 핸들러는 세가지 작업을 해야합니다.
 
-1. *error* 파라미터가 *nil* 인지 확인합니다. 아니라면 전송 에러가 발생한 것입니다. 에러를 처리하고 종료합니다.
-2. `response` 파라미터를 확인하여 상태 코드가 성공을 나타내는지 확인하고 MIME 타입이 예상 값인지 확인합니다. 아니라면 서버 에러를 처리하고 종료합니다.
-3. 필요에 따라 `data` 인스턴스를 사용합니다.
+1. error 파라미터가 nil 인지 확인합니다. 아니라면 전송 에러가 발생한 것입니다. 에러를 처리하고 종료합니다.
+2. response 파라미터를 확인하여 상태 코드가 성공을 나타내는지 확인하고 MIME 타입이 예상 값인지 확인합니다. 아니라면 서버 에러를 처리하고 종료합니다.
+3. 필요에 따라 data 인스턴스를 사용합니다.
 
 <br>
 
-> `Listing 1` shows a `startLoad()` method for fetching a URL’s contents. It starts by using the URLSession class’s shared instance to create a data task that delivers its results to a completion handler. After checking for local and server errors, this handler converts the data to a string, and uses it to populate a *WKWebView* outlet. Of course, your app might have other uses for fetched data, like parsing it into a data model.
+> `Listing 1` shows a *startLoad()* method for fetching a URL’s contents. It starts by using the URLSession class’s shared instance to create a data task that delivers its results to a completion handler. After checking for local and server errors, this handler converts the data to a string, and uses it to populate a *WKWebView* outlet. Of course, your app might have other uses for fetched data, like parsing it into a data model.
 
-`Listing 1`은 URL의 컨텐츠를 가져오는 `startLoad()` 메서드를 보여줍니다. URLSession 클래스의 shared 인스턴스를 사용하여 결과를 컴플리션 핸들러에 전달하는 데이터 태스크를 생성하는 것으로 시작합니다. 로컬 에러와 서버 에러를 확인한 후 이 핸들러는 데이터를 string으로 변환하고 이를 사용하여 *WKWebView* outlet을 채웁니다. 물론 가져온 데이터를 데이터 모델로 파싱 하는 것과 같이 다른 용도로 사용할 수 있습니다.  
+`Listing 1`은 URL의 컨텐츠를 가져오는 startLoad() 메서드를 보여줍니다. URLSession 클래스의 shared 인스턴스를 사용하여 결과를 컴플리션 핸들러에 전달하는 데이터 태스크를 생성하는 것으로 시작합니다. 로컬 에러와 서버 에러를 확인한 후 이 핸들러는 데이터를 string으로 변환하고 이를 사용하여 WKWebView outlet을 채웁니다. 물론 가져온 데이터를 데이터 모델로 파싱 하는 것과 같이 다른 용도로 사용할 수 있습니다.  
 
 <br>
   
@@ -107,7 +107,7 @@ func startLoad() {
 
 ## Receive Transfer Details and Results with a Delegate
 
-> For a greater level of access to the task’s activity as it proceeds, when creating the data task, you can set a delegate on the session, rather than providing a completion handler. Figure 2 shows this arrangement.
+> For a greater level of access to the task’s activity as it proceeds, when creating the data task, you can set a delegate on the session, rather than providing a completion handler. `Figure 2` shows this arrangement.
 
 태스크의 동작 과정에 더 높은 접근 수준을 위해서 데이터 태스크를 생성할 때 컴플리션 핸들러를 제공하는 대신에 세션에 델리게이트를 설정할 수 있습니다. `Figure 2`는 이 방법을 보여줍니다.
 
@@ -125,13 +125,13 @@ func startLoad() {
 
 > You need to create your own *URLSession* instance when using the delegate approach, rather than using the *URLSession* class’s simple *shared* instance. Creating a new session allows you to set your own class as the session’s delegate, as shown in Listing 2.
   
-델리게이트 방법을 사용할 때 *URLSession* 클래스의 간단한 *shared* 인스턴스를 사용하는 것 대신 당신 자신의 *URLSession* 인스턴스를 생성해야 합니다. `Listing 2`에서 보여주듯이 새로운 세션을 만들면 당신 자신의 클래스를 세션의 델리게이트로 설정할 수 있습니다.  
+델리게이트 방법을 사용할 때 URLSession 클래스의 간단한 shared 인스턴스를 사용하는 것 대신 당신 자신의 URLSession 인스턴스를 생성해야 합니다. `Listing 2`에서 보여주듯이 새로운 세션을 만들면 당신 자신의 클래스를 세션의 델리게이트로 설정할 수 있습니다.  
 
 <br>
 
 > Declare that your class implements one or more of the delegate protocols (`URLSessionDelegate`, `URLSessionTaskDelegate`, `URLSessionDataDelegate`, and `URLSessionDownloadDelegate`). Then create the URL session instance with the initializer `init(configuration:delegate:delegateQueue:)`. You can customize the configuration instance used with this initializer. For example, it’s a good idea to set `waitsForConnectivity` to *true*. That way, the session waits for suitable connectivity, rather than failing immediately if the required connectivity is unavailable.
   
-클래스가 하나 이상의 델리게이트 프로토콜(`URLSessionDelegate`, `URLSessionTaskDelegate`, `URLSessionDataDelegate`, `URLSessionDownloadDelegate`)을 구현하도록 선언합니다. 그리고 이니셜라이저 `init(configuration:delegate:delegateQueue:)`으로 URL session 인스턴스를 생성합니다. 이 이니셜라이저와 함께 사용되는 *configuration* 인스턴스를 커스터마이징 할 수 있습니다. 예를 들어 `waitsForConnectivity`를 *true*로 설정하는 것이 좋습니다. 이 방법으로 세션은 필요한 연결이 허용되지 않은 경우 즉시 실패하는 대신에 적합한 연결을 기다립니다.  
+클래스가 하나 이상의 델리게이트 프로토콜(`URLSessionDelegate`, `URLSessionTaskDelegate`, `URLSessionDataDelegate`, `URLSessionDownloadDelegate`)을 구현하도록 선언합니다. 그리고 이니셜라이저 `init(configuration:delegate:delegateQueue:)`으로 URL session 인스턴스를 생성합니다. 이 이니셜라이저와 함께 사용되는 configuration 인스턴스를 커스터마이징 할 수 있습니다. 예를 들어 `waitsForConnectivity`를 true로 설정하는 것이 좋습니다. 이 방법으로 세션은 필요한 연결이 허용되지 않은 경우 즉시 실패하는 대신에 적합한 연결을 기다립니다.  
 
 <br>
   
@@ -154,11 +154,11 @@ private lazy var session: URLSession = {
 >
 > - `urlSession(_:task:didCompleteWithError:)` first looks to see if a transport-level error has occurred. If there is no error, it attempts to convert the *receivedData* buffer to a string and set it as the contents of webView.
 
-`Listing 3`는 이 세션을 사용하여 데이터 태스크를 시작하는 *startLoad()* 메서드와, 수신된 데이터와 에러를 처리하는 델리게이트 콜백의 사용을 보여줍니다. 이 리스트는
+`Listing 3`는 이 세션을 사용하여 데이터 태스크를 시작하는 startLoad() 메서드와, 수신된 데이터와 에러를 처리하는 델리게이트 콜백의 사용을 보여줍니다. 이 리스트는
 3개의 델리게이트 콜백을 구현합니다.
 
-- `urlSession(_:dataTask:didReceive:completionHandler:)`은 응답에 성공적인 HTTP 상태 코드가 있는지, MIME 타입이 *text/html* 또는 *text/plain* 인지 확인합니다. 이 중 하나라도 충족하지 않으면 태스크는 취소되고, 그렇지 않으면 계속 진행됩니다.
-- `urlSession(_:dataTask:didReceive:)`는 태스크에서 수신한 각 *Data* 인스턴스를 *receivedData* 버퍼에 추가합니다.
+- `urlSession(_:dataTask:didReceive:completionHandler:)`은 응답에 성공적인 HTTP 상태 코드가 있는지, MIME 타입이 text/html 또는 text/plain 인지 확인합니다. 이 중 하나라도 충족하지 않으면 태스크는 취소되고, 그렇지 않으면 계속 진행됩니다.
+- `urlSession(_:dataTask:didReceive:)`는 태스크에서 수신한 각 Data 인스턴스를 receivedData 버퍼에 추가합니다.
 - `urlSession(_:task:didCompleteWithError:)`는 먼저 전송 단계 에러가 발생했는지 확인합니다. 에러가 없다면 *receivedData* 버퍼를 string으로 변환을 시도하고 webView의 컨텐츠로 설정합니다.
 
 <br>
