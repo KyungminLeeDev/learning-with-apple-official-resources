@@ -234,9 +234,9 @@ lines.forEach { line in
 
 ## Don't Put Critical Code in a Closure That Might Not Be Called
 
-호출되지 않을 수 있는 클로저에 크리티컬한 코드를 넣지 마세요
+**호출되지 않을 수 있는 클로저에 크리티컬한 코드를 넣지 마세요**
 
----
+<br>
 
 > If there’s a chance that a closure you pass to an API won’t be called, don’t put code that’s critical to continuing your app in the closure.
 
