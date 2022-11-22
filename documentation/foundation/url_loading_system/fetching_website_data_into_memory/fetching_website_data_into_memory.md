@@ -1,4 +1,14 @@
+## 📌 메모
+
+단순 번역이 아닌, 내용 정리 또는 메모는 소제목에 압정(`📌`) 이모지를 붙여서 여기에 작성하거나 링크합니다.
+
+- [📌 샘플 프로젝트](#-샘플-프로젝트)
+
+<br><br><br>
+
+
 # [Fetching Website Data into Memory](https://developer.apple.com/documentation/foundation/url_loading_system/fetching_website_data_into_memory)
+# 웹사이트 데이터를 메모리에 가져오기
 
 
 > Receive data directly into memory by creating a data task from a URL session.
@@ -21,22 +31,22 @@ URL session 인스턴스를 사용하여 태스크를 생성합니다. 요구 �
 
 <br>
 
-> **Note**
+> ### Note
 >
 >> Be careful to not create more sessions than you need. For example, if you have several parts of your app that need a similarly configured session, create one session and share it among them.
 >
 > 필요 이상으로 세션을 생성하지 않도록 주의하세요. 예를 들어 앱의 여러 부분에서 유사한 구성의 세션이 필요하다면 하나의 세션을 생성하고 공유하세요.
 
-
 <br>
 
-> Once you have a session, you create a data task with one of the `dataTask()` methods. Tasks are created in a suspended state, and can be started by calling `resume()`.
+> Once you have a session, you create a data task with one of the *dataTask()* methods. Tasks are created in a suspended state, and can be started by calling `resume()`.
 
-세션이 있으면 `dataTask()` 메서드 중 하나로 데이터 태스크를 생성합니다. 태스크는 중단된 상태로 생성되며 `resume()`을 호출하여 시작할 수 있습니다.
+세션이 있으면 dataTask() 메서드 중 하나로 데이터 태스크를 생성합니다. 태스크는 중단된 상태로 생성되며 `resume()`을 호출하여 시작할 수 있습니다.
 
 <br>
 
 ## Receive Results with a Completion Handler
+## 컴플리션 핸들러로 결과 수신하기
 
 > The simplest way to fetch data is to create a data task that uses a completion handler. With this arrangement, the task delivers the server’s response, data, and possibly errors to a completion handler block that you provide. `Figure 1` shows the relationship between a session and a task, and how results are delivered to the completion handler.
 
@@ -97,7 +107,7 @@ func startLoad() {
 }
 ~~~
 
-> **Important**  
+> ### Important  
 >
 >> The completion handler is called on a different Grand Central Dispatch queue than the one that created the task. Therefore, any work that uses data or error to update the UI — like updating webView — should be explicitly placed on the main queue, as shown here.
 >
@@ -106,6 +116,7 @@ func startLoad() {
 <br>
 
 ## Receive Transfer Details and Results with a Delegate
+## 델리게이트로 전송 세부 정보와 결과를 수신하기
 
 > For a greater level of access to the task’s activity as it proceeds, when creating the data task, you can set a delegate on the session, rather than providing a completion handler. `Figure 2` shows this arrangement.
 
