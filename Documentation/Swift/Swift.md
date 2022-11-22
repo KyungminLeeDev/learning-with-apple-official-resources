@@ -1,4 +1,5 @@
-# [Swift](https://developer.apple.com/documentation/swif)
+# [Swift](https://developer.apple.com/documentation/swift)
+# 스위프트
 
 > Build apps using a powerful open language.
 
@@ -11,8 +12,6 @@
 > Swift includes modern features like type inference, optionals, and closures, which make the syntax concise yet expressive. Swift ensures your code is fast and efficient, while its memory safety and native error handling make the language safe by design. Writing Swift code is interactive and fun in Swift Playgrounds, playgrounds in Xcode, and REPL.
 
 스위프트는 추론, 옵셔널, 클로저와 같은 최신 기능을 포함하며, 이것은 문법을 간결하면서도 표현적으로 만듭니다. 스위프트는 당신의 코드가 빠르고 효율적이게 보장하는 동시에 메모리 안전과 네이티브 에러 처리는 언어를 설계적으로 안전하게 합니다. 스위프트 플레이그라운드, Xcode의 플레이그라운드, REPL에서 하는 스위프트 코드 작성은 인터랙티브하고 재밌습니다.
-
-<br>
 
 ~~~swift
 var interestingNumbers = [
@@ -32,6 +31,7 @@ print(interestingNumbers["primes"]!)
 <br>
 
 ## Learn Swift
+## 스위프트 배우기
 
 > If you’re new to Swift, read The `Swift Programming Language` for a quick tour, a comprehensive language guide, and a full reference manual. If you’re new to programming, check out `Swift Playgrounds` on iPad.
 
