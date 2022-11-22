@@ -18,9 +18,7 @@
 
 
 # [Preventing Timing Problems When Using Closures](https://developer.apple.com/documentation/swift/preventing_timing_problems_when_using_closures)
-
-
-**클로저 사용 시 타이밍 문제 방지하기**
+# 클로저 사용 시 타이밍 문제 방지하기
 
 <br>
 
@@ -47,10 +45,7 @@
 <br>
 
 ## Understand the Results of Synchronous and Asynchronous Calls
-
-**동기와 비동기 호출의 결과 이해하기**
-
-<br>
+## 동기와 비동기 호출의 결과 이해하기
 
 > When you pass a closure to an API, consider when that closure will be called relative to the other code in your app. In synchronous APIs, the result of calling the closure will be available immediately after you pass the closure. In asynchronous APIs, the result won’t be available until sometime later; this difference affects how you write code both in your closure as well as the code following your closure.
 
@@ -178,8 +173,7 @@ override func viewDidLoad() {
 <br>
 
 ## Don't Write Code That Makes a One-Time Change in a Closure That's Called Multiple Times
-
-**여러 번 호출되는 클로저 안에 한 번만 변경하는 코드를 작성하지 마세요**
+## 여러 번 호출되는 클로저 안에 한 번만 변경하는 코드를 작성하지 마세요
 
 <br>
 
@@ -236,8 +230,7 @@ lines.forEach { line in
 <br>
 
 ## Don't Put Critical Code in a Closure That Might Not Be Called
-
-**호출되지 않을 수 있는 클로저에 크리티컬한 코드를 넣지 마세요**
+## 호출되지 않을 수 있는 클로저에 크리티컬한 코드를 넣지 마세요
 
 <br>
 
