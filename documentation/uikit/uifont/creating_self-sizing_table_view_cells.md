@@ -20,26 +20,26 @@ This sample code project shows how to create self-sizing table view cells that s
 
 <br>
 
-The project also shows how to use Auto Layout constraints to automatically adjust the spacing surrounding text labels based on the text size. To demonstrate automatic spacing, the cell displays two [UIFont](https://developer.apple.com/documentation/uikit/uifont) objects: a headline label and a body label.
+The project also shows how to use Auto Layout constraints to automatically adjust the spacing surrounding text labels based on the text size. To demonstrate automatic spacing, the cell displays two [`UIFont`](https://developer.apple.com/documentation/uikit/uifont) objects: a headline label and a body label.
   
-> 또한 이 프로젝트는 오토 레이아웃 constraint를 사용하여 텍스트 크기에 따라 텍스트 레이블 주위의 spacing을 자동으로 조정하는 방법을 보여줍니다. 자동 spacing을 설명하기 위해, 셀은 headline 레이블과 body 레이블이라는 두 UIFont 오브젝트를 표시합니다.
+> 또한 이 프로젝트는 오토 레이아웃 constraint를 사용하여 텍스트 크기에 따라 텍스트 레이블 주위의 spacing을 자동으로 조정하는 방법을 보여줍니다. 자동 spacing을 설명하기 위해, 셀은 headline 레이블과 body 레이블이라는 두 `UIFont` 오브젝트를 표시합니다.
 
 <br>
 
 ## Add Dynamic Type Support
 
-To add support for Dynamic Type, the cell assigns a scaled font to each label. For the headline label, the preferred font with the [headline](https://developer.apple.com/documentation/uikit/uifont/textstyle/1616702-headline) text style is used. The preferred font is the system font, which can scale to different sizes. Its initial text size is determined by the font metric for the headline text style.
+To add support for Dynamic Type, the cell assigns a scaled font to each label. For the headline label, the preferred font with the [`headline`](https://developer.apple.com/documentation/uikit/uifont/textstyle/1616702-headline) text style is used. The preferred font is the system font, which can scale to different sizes. Its initial text size is determined by the font metric for the headline text style.
 
-> 다이나믹 타입을 지원하기 위해, 셀은 각 레이블에 scaled 폰트를 할당합니다. headline 레이블에는 headine 텍스트 스타일의 preferred 폰트가 사용됩니다. preferred 폰트는 시스템 폰트로, 다양한 크기로 변경될 수 있습니다. 이것의 초기 텍스트 크기는 headline 텍스트 스타일의 폰트 metric에 따라 결정됩니다.
+> 다이나믹 타입을 지원하기 위해, 셀은 각 레이블에 scaled 폰트를 할당합니다. headline 레이블에는 `headline` 텍스트 스타일의 preferred 폰트가 사용됩니다. preferred 폰트는 시스템 폰트로, 다양한 크기로 변경될 수 있습니다. 이것의 초기 텍스트 크기는 headline 텍스트 스타일의 폰트 metric에 따라 결정됩니다.
 
 ~~~swift
 headlineLabel.font = UIFont.preferredFont(forTextStyle: .headline)
 headlineLabel.adjustsFontForContentSizeCategory = true
 ~~~
 
-For the body label, a custom font is used. However, in order to support Dynamic Type with a custom font, a version of the font must be created that adopts the font metric for a particular text style. In the case of the body label, the Palatino custom font is used with the [body](https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body) text style.
+For the body label, a custom font is used. However, in order to support Dynamic Type with a custom font, a version of the font must be created that adopts the font metric for a particular text style. In the case of the body label, the Palatino custom font is used with the [`body`](https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body) text style.
 
-> body 레이블에는 커스텀 폰트를 사용합니다. 커스텀 폰트에 다이나믹 타입을 지원하려면, 텍스트 스타일의 폰트 metric을 포함하는 폰트의 버전이 반드시 생성돼있어야 합니다. body 레이블의 경우엔 body 텍스트 스타일로 Palatino 커스텀 폰트가 사용되었습니다.
+> body 레이블에는 커스텀 폰트를 사용합니다. 커스텀 폰트에 다이나믹 타입을 지원하려면, 텍스트 스타일의 폰트 metric을 포함하는 폰트의 버전이 반드시 생성돼있어야 합니다. body 레이블의 경우엔 `body` 텍스트 스타일로 Palatino 커스텀 폰트가 사용되었습니다.
 
 ~~~swift
 guard let palatino = UIFont(name: "Palatino", size: 18) else {
@@ -53,17 +53,17 @@ bodyLabel.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: palatino)
 bodyLabel.adjustsFontForContentSizeCategory = true
 ~~~
 
-Before the effects of Dynamic Type can be seen, the [adjustsFontForContentSizeCategory](https://developer.apple.com/documentation/uikit/uicontentsizecategoryadjusting/1771731-adjustsfontforcontentsizecategor) property must be set to true on each label. This property tells the label to automatically adjust the text size for its font when the user changes their preferred text size. For more information, see [Scaling Fonts Automatically](https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically).
+Before the effects of Dynamic Type can be seen, the [`adjustsFontForContentSizeCategory`](https://developer.apple.com/documentation/uikit/uicontentsizecategoryadjusting/1771731-adjustsfontforcontentsizecategor) property must be set to true on each label. This property tells the label to automatically adjust the text size for its font when the user changes their preferred text size. For more information, see [`Scaling Fonts Automatically`](https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically).
 
-> 다이나믹 타입의 효과를 보려면 각 레이블의 adjustsFontForContentSizeCategory 프로퍼티를 true로 설정해야 합니다. 이 프로퍼티는 유저가 preferred 텍스트 크기를 변경할 때 폰트에 대한 텍스트 크기를 자동으로 조절하도록 레이블에 알려줍니다. 더 많은 정보를 보려면 Scailing Fonts Automatically를 보세요.
+> 다이나믹 타입의 효과를 보려면 각 레이블의 `adjustsFontForContentSizeCategory` 프로퍼티를 true로 설정해야 합니다. 이 프로퍼티는 유저가 preferred 텍스트 크기를 변경할 때 폰트에 대한 텍스트 크기를 자동으로 조절하도록 레이블에 알려줍니다. 더 많은 정보를 보려면 `Scailing Fonts Automatically`를 보세요.
 
 <br>
 
 ## Use Auto Layout Constraints to Adjust Cell Size and Spacing
 
-At this point, the two labels are able to adjust the size of their text automatically. However, the cell isn’t able to adjust its size. Auto Layout constraints are needed to adjust the size and spacing of the cell’s [contentView](https://developer.apple.com/documentation/uikit/uitableviewcell/1623229-contentview) and the labels it contains.
+At this point, the two labels are able to adjust the size of their text automatically. However, the cell isn’t able to adjust its size. Auto Layout constraints are needed to adjust the size and spacing of the cell’s [`contentView`](https://developer.apple.com/documentation/uikit/uitableviewcell/1623229-contentview) and the labels it contains.
 
-> 이 지점에서, 두 레이블은 텍스트 크기를 자동으로 조절하도록 허용했습니다. 하지만 셀은 자신의 크기를 조절하도록 허용되지 않았습니다. 오토 레이아웃 constraint는 셀의 contentView와 여기에 포함된 레이블의 크기와 간격을 조정하기 위해 필요합니다.
+> 이 지점에서, 두 레이블은 텍스트 크기를 자동으로 조절하도록 허용했습니다. 하지만 셀은 자신의 크기를 조절하도록 허용되지 않았습니다. 오토 레이아웃 constraint는 셀의 `contentView`와 여기에 포함된 레이블의 크기와 간격을 조정하기 위해 필요합니다.
 
 <br>
 
@@ -101,9 +101,9 @@ One way vertical positioning can be set is to add a constraint that defines the 
 
 <br>
 
-A system spacing constraint sets the distance between two UI elements to a value based on information provided by the anchors used when creating the constraint. For example, a system spacing constraint can position a label’s [firstBaselineAnchor](https://developer.apple.com/documentation/uikit/uiview/1622508-firstbaselineanchor) (the baseline for the topmost text in the label) below another label’s [lastBaselineAnchor](https://developer.apple.com/documentation/uikit/uiview/1622471-lastbaselineanchor) (the baseline for the bottommost text in that label) at a distance defined by the system. The constraint ensures that adequate spacing is always applied between the two labels regardless of the text size, without adjusting the constraint’s constant value.
+A system spacing constraint sets the distance between two UI elements to a value based on information provided by the anchors used when creating the constraint. For example, a system spacing constraint can position a label’s [`firstBaselineAnchor`](https://developer.apple.com/documentation/uikit/uiview/1622508-firstbaselineanchor) (the baseline for the topmost text in the label) below another label’s [`lastBaselineAnchor`](https://developer.apple.com/documentation/uikit/uiview/1622471-lastbaselineanchor) (the baseline for the bottommost text in that label) at a distance defined by the system. The constraint ensures that adequate spacing is always applied between the two labels regardless of the text size, without adjusting the constraint’s constant value.
 
-> system spacing constraint는 constraint를 만들 때 사용되는 앵커에서 제공하는 정보를 기반으로 두 UI 요소 사이의 거리를 값으로 설정합니다. 예를 들어, system spacing constraint는 레이블의 firstBaseLineAnchor (레이블의 최상단 텍스트의 베이스라인)를 다른 레이블의 lastBaseLineAnchor (레이블의 최하단 텍스트의 베이스라인) 아래에 시스템이 정의한 거리로 위치시킬 수 있습니다. 이 constraint는 상수 값을 조정하지 않고 텍스트 크기에 관계없이 항상 두 레이블 사이에 충분한 간격을 적용합니다.
+> system spacing constraint는 constraint를 만들 때 사용되는 앵커에서 제공하는 정보를 기반으로 두 UI 요소 사이의 거리를 값으로 설정합니다. 예를 들어, system spacing constraint는 레이블의 `firstBaseLineAnchor` (레이블의 최상단 텍스트의 베이스라인)를 다른 레이블의 `lastBaseLineAnchor` (레이블의 최하단 텍스트의 베이스라인) 아래에 시스템이 정의한 거리로 위치시킬 수 있습니다. 이 constraint는 상수 값을 조정하지 않고 텍스트 크기에 관계없이 항상 두 레이블 사이에 충분한 간격을 적용합니다.
 
 <br>
 
