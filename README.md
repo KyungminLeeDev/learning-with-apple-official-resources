@@ -9,29 +9,29 @@
 - 원문을 참고하길 추천하며 가능한 링크를 남기겠습니다.
 - 배운 내용이나 메모는 소제목에 압정(`📌`) 이모지를 표시하여 작성하고 링크합니다.
 
-<br/><br/><br/>         
+<br><br><br>         
 
 
 
 ## Developer Documentation
 
-- [Foundation](./Documentation/foundation/foundation.md)
-    - `API Collection` [URL Loading System](./Documentation/foundation/url_loading_system/url_loading_system.md)
-        - `Article` [Fetching Website Data into Memory](./Documentation/foundation/url_loading_system/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md)
-            - 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./Documentation/foundation/url_loading_system/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-results-with-a-completion-handler-샘플-프로젝트)
-            - 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./Documentation/foundation/url_loading_system/Fetching-Website-Data-into-Memory/Fetching-Website-Data-into-Memory.md#-receive-transfer-details-and-results-with-a-delegate-샘플-프로젝트)
-- [Swift](./Documentation/Swift/Swift.md)
-    - `Article` [Preventing Timing Problems When Using Closures](./Documentation/Swift/Preventing-Timing-Problems-When-Using-Closures.md) 
-        - 📌 [비동기 호출의 결과를 잘못 사용하는 예](./Documentation/Swift/Preventing-Timing-Problems-When-Using-Closures.md/#-비동기-호출의-결과를-잘못-사용하는-예)
-- [UIKit](./Documentation/UIKIt/UIKit.md)
-    - `Class` [UIFont](./Documentation/UIKIt/UIFont/UIFont.md)
-        - `Sample Code` [Creating Self-Sizing Table View Cells](./Documentation/UIKIt/UIFont/Creating-Self-Sizing-Table-View-Cells.md)
-            - [Sample Code Project](./Documentation/UIKIt/UIFont/CreatingSelfSizingTableViewCells)
-    - `Class` [UIApplication](./Documentation/UIKIt/UIApplication/uiapplication.md)
-        - `Topic` [Managing the preferred content size](./Documentation/UIKIt/UIApplication/uiapplication.md#managing-the-preferred-content-size)
-        - 🧑🏻‍💻 [텍스트 크기 설정값 가져오기 예제](./Documentation/UIKIt/UIApplication/Getting-the-Font-Sizing-Preference-Example.md)
+- [Foundation](./documentation/foundation/foundation.md)
+    - `API Collection` [URL Loading System](./documentation/foundation/url_loading_system/url_loading_system.md)
+        - `Article` [Fetching Website Data into Memory](./documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md)
+            - 📌 [Receive Results with a Completion Handler 샘플 프로젝트](./documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md#-receive-results-with-a-completion-handler-샘플-프로젝트)
+            - 📌 [Receive Transfer Details and Results with a Delegate 샘플 프로젝트](./documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md#-receive-transfer-details-and-results-with-a-delegate-샘플-프로젝트)
+- [Swift](./documentation/swift/swift.md)
+    - `Article` [Preventing Timing Problems When Using Closures](./documentation/swift/preventing-timing-problems-when-using-closures.md) 
+        - 📌 [비동기 호출의 결과를 잘못 사용하는 예](./documentation/swift/preventing-timing-problems-when-using-closures.md#-비동기-호출의-결과를-잘못-사용하는-예)
+- [UIKit](./documentation/uikit/uikit.md)
+    - `Class` [UIFont](./documentation/uikit/uifont/uifont.md)
+        - `Sample Code` [Creating Self-Sizing Table View Cells](./documentation/uikit/uifont/creating_self-sizing_table_view_cells.md)
+            - [Sample Code Project](./documentation/uikit/uifont/CreatingSelfSizingTableViewCells)
+    - `Class` UIApplication
+        - `Topic` [Managing the preferred content size](./documentation/uikit/uiapplication/Managing-the-preferred-content-size.md)
+        - 🧑🏻‍💻 [텍스트 크기 설정값 가져오기 예제](./documentation/uikit/uiapplication/Getting-the-Font-Sizing-Preference-Example.md)
 
-<br/><br/><br/> 🄿🅁 Ⓟⓡ
+<br><br><br>
 
 
 
@@ -81,9 +81,7 @@
     - [📌 compactMap과 map의 차이](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-9-System-Frameworks.md#-compactmap과-map의-차이)
     - [📌 더 이상 사용되지 않는 옵저버 제거](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-9-System-Frameworks.md#-더-이상-사용되지-않는-옵저버-제거)
 
-## SwiftUI
-
-<br/><br/><br/>
+<br><br><br>
 
 
 
@@ -101,4 +99,3 @@
     - [7. Error Handling](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-7-error-handling.md)
     - [8. Generics](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-8-generics.md)
 - Language Guide
-
