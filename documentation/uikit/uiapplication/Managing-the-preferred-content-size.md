@@ -8,7 +8,6 @@
 - static let [didChangeNotification](#didChangeNotification): NSNotification.Name
 - static let [newValueUserInfoKey](#newValueUserInfoKey): String
 
-
 <br>
 
 ## [preferredContentSizeCategory](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory)
@@ -47,7 +46,7 @@ For a list of possible values, see Content Size Category Constants and Accessibi
 
 Constants that indicate the preferred size of your content.
 
-> 컨텐츠의 선호하는 크기를 나타내는 상수
+> 컨텐츠의 기본 크기를 나타내는 상수
 
 <br><br><br>
 
@@ -59,6 +58,8 @@ Constants that indicate the preferred size of your content.
 
 A collection of methods that give controls an easy way to adopt automatic adjustment to content category changes.
 
+> 컨텐츠 카테고리 변경사항에 자동 조정 적용을 쉽게 하기 위한 컨트롤을 제공하는 메서드의 모음입니다.
+
 <br><br><br>
 
 
@@ -69,9 +70,13 @@ A collection of methods that give controls an easy way to adopt automatic adjust
 
 A notification that posts when the user changes the preferred content size setting.
 
+> 유저가 컨텐츠 기본 크기 설정을 변경했을 때 발신되는 알림
+
 ### Discussion
 
 This notification is sent when the value in the [`preferredContentSizeCategory`](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory) property changes. The userInfo dictionary of the notification contains the [`newValueUserInfoKey`](https://developer.apple.com/documentation/uikit/uicontentsizecategory/1623012-newvalueuserinfokey) key, which reflects the new setting.
+
+> 이 알림은 `preferredContentSizeCategory` 프로퍼티 값이 변경될 때 발송됩니다. 알림의 userinfo 딕셔너리는 새 설정값을 나타내는 `newValueUserInfoKey` 키를 포함합니다.
 
 <br><br><br>
 
@@ -83,9 +88,10 @@ This notification is sent when the value in the [`preferredContentSizeCategory`]
 
 A key that reflects the new preferred content size.
 
+> 새로운 컨텐츠 기본 크기를 나타내는 키.
+
 ### Discussion
 
 This key’s value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that reflects the new value of the [`preferredContentSizeCategory`](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory) property.
 
-
-
+> 이 키값은 `preferredContentSizeCategory`프로퍼티의 새 값을 나타내는 `NSString` 오브젝트입니다.
