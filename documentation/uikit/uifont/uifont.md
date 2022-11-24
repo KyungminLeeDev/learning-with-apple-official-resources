@@ -1,6 +1,6 @@
-`Class`
-
 # UIFont
+
+`Class`
 
 An object that provides access to the font’s characteristics.
 

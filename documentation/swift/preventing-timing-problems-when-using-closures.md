@@ -11,9 +11,10 @@
 <br><br><br>
 
 
-`Article`
 
 # [Preventing Timing Problems When Using Closures](https://developer.apple.com/documentation/swift/preventing_timing_problems_when_using_closures)
+
+`Article`
 
 Understand how different API calls to your closures can affect your app.
 

@@ -1,6 +1,6 @@
-`Instance Property`
-
 # [preferredContentSizeCategory](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory)
+
+`Instance Property`
 
 The font sizing option preferred by the user.
 

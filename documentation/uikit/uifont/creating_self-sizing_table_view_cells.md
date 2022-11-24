@@ -1,6 +1,6 @@
-`Sample Code`
-
 # [Creating Self-Sizing Table View Cells](https://developer.apple.com/documentation/uikit/uifont/creating_self-sizing_table_view_cells)
+
+`Sample Code`
 
 Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
 
