@@ -1,18 +1,18 @@
 # [공식문서로 iOS 배우기] 텍스트 크기 설정값 가져오기 예제
 
 - 공식 자료로 학습한 내용을 바탕으로 만든 예제이며 잘못된 정보가 있을 수 있습니다.
-- 참고한 공식 자료: Documentation > UIKit > UIApplication > Topics > [Getting the Font Sizing Preference](https://developer.apple.com/documentation/uikit/uiapplication)
-- 학습 내용 정리: UIApplication > [Getting the Font Sizing Preference](./Getting-the-Font-Sizing-Preference.md)
+- 참고한 공식 자료: Documentation / UIKit / UIApplication / [Getting the Font Sizing Preference](https://developer.apple.com/documentation/uikit/uiapplication)
+    - `Managing the preferred content size`로 제목 변경됨
+- 번역 및 정리: UIApplication > [Managing the preferred content size](./Managing-the-preferred-content-size.md)
 - 예제 프로젝트 전체 코드: [GettingTheFontSizingPreference](./GettingTheFontSizingPreference/)
 
-**Index**
+## Index
 - [예제 설명](#예제-설명)
 - [프로젝트 셋팅](#프로젝트-셋팅)
 - [텍스트 크기 설정값 표시하기](#텍스트-크기-설정값-표시하기)
 - [변경한 텍스트 크기 설정값을 바로 표시하기](#변경한-텍스트-크기-설정값을-바로-표시하기)
 
-<br/><br/><br/>
-
+<br>
 
 
 ## 예제 설명
@@ -22,7 +22,7 @@
 
 ![](./GettingTheFontSizingPreference/Images/GettingTheFontSizingPreference_Demo.gif)
 
-<br/><br/><br/>
+<br>
 
 
 
@@ -60,7 +60,7 @@ Leading, Trailing, Top Constraint만 적절히 설정한다.
 
 프로젝트 셋팅이 완료됐다. 이제 기능을 추가한다.
 
-<br/><br/><br/>
+<br><br><br>
 
 
 
@@ -93,8 +93,7 @@ accessiblityLabel.text = "isAccessibilityCategory? \(UIApplication.shared.prefer
 ![](./GettingTheFontSizingPreference/Images/CurrentFontSize.png)
 
 
-
-<br/><br/><br/>
+<br><br><br>
 
 
 
