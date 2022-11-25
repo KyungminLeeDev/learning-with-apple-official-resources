@@ -2,7 +2,7 @@
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FKyungminLeeDev%2Flearning-with-apple-official-resources&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-**애플 공식 자료로 학습한 내용을 정리하는 저장소**
+**애플 공식 자료로 학습하기**
 
 - 공식 자료를 학습하고 정리했으며 잘못된 정보가 있을 수 있습니다.
 - 문서의 단순 번역은 `경어체`를, 직접 작성한 내용은 `평어체`를 사용합니다.
