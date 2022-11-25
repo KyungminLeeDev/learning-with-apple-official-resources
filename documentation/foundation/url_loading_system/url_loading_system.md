@@ -1,6 +1,6 @@
-# [URL Loading System](https://developer.apple.com/documentation/foundation/url_loading_system)
+# URL Loading System
 
-`API Collection`
+`API Collection` [`원문`](https://developer.apple.com/documentation/foundation/url_loading_system)
 
 Interact with URLs and communicate with servers using standard Internet protocols.
 
