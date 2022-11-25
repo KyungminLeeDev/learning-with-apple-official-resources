@@ -1,36 +1,20 @@
-## 📌 메모
+# Fetching Website Data into Memory
 
-단순 번역이 아닌, 내용 정리 또는 메모는 소제목에 압정(`📌`) 이모지를 붙여서 여기에 작성하거나 링크합니다.
-
-- [📌 샘플 프로젝트](#-샘플-프로젝트)
-
-<br><br><br>
-
-
-
-# [Fetching Website Data into Memory](https://developer.apple.com/documentation/foundation/url_loading_system/fetching_website_data_into_memory)
-
-`Article`
+`Article` [`원문`](https://developer.apple.com/documentation/foundation/url_loading_system/fetching_website_data_into_memory)
 
 Receive data directly into memory by creating a data task from a URL session.
 
 > URL session에서 데이터 태스크를 생성하여 데이터를 메모리에 직접 수신합니다.
-
-<br>
 
 ## Overview
 
 For small interactions with remote servers, you can use the [`URLSessionDataTask`](https://developer.apple.com/documentation/foundation/urlsessiondatatask) class to receive response data into memory (as opposed to using the [`URLSessionDownloadTask`](https://developer.apple.com/documentation/foundation/urlsessiondownloadtask) class, which stores the data directly to the file system). A data task is ideal for uses like calling a web service endpoint.
 
 > 원격 서버와 간단한 상호 작용에는 `URLSessionDataTask` 클래스를 사용하여 응답 데이터를 메모리에 수신할 수 있습니다 (데이터를 파일 시스템에 직접 저장하는 `URLSessionDownloadTask` 클래스를 사용하는 것과는 다르게). 데이터 태스크는 웹 서비스 엔드포인트를 호출하는 것 같은 용도에 이상적입니다.  
-  
-<br>
 
 You use a URL session instance to create the task. If your needs are fairly simple, you can use the [`shared`](https://developer.apple.com/documentation/foundation/urlsession/1409000-shared) instance of the [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) class. If you want to interact with the transfer through delegate callbacks, you’ll need to create a session instead of using the shared instance. You use a [`URLSessionConfiguration`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration) instance when creating a session, also passing in a class that implements [`URLSessionDelegate`](https://developer.apple.com/documentation/foundation/urlsessiondelegate) or one of its subprotocols. Sessions can be reused to create multiple tasks, so for each unique configuration you need, create a session and store it as a property.
 
 > URL session 인스턴스를 사용하여 태스크를 생성합니다. 요구 사항이 매우 간단하다면 `URLSession`의 `shared` 인스턴스를 사용할 수 있습니다. delegate 콜백을 통해 상호작용하려면 shared 인스턴스를 사용하는 대신에 session을 생성해야 합니다. session을 생성할 때 `URLSessionConfiguration` 인스턴스를 사용하고 `URLSessionDelegate` 또는 그 하위 프로토콜 중 하나를 정의하는 클래스에도 전달합니다. 세션은 다수의 태스크를 생성하는 데 사용될 수 있으므로 고유한 환경 설정이 필요하다면 세션을 생성하고 프로퍼티로 저장하세요.
-
-<br>
 
 > **Note**
 >
@@ -38,21 +22,15 @@ You use a URL session instance to create the task. If your needs are fairly simp
 >
 >> 필요 이상으로 세션을 생성하지 않도록 주의하세요. 예를 들어 앱의 여러 부분에서 유사한 구성의 세션이 필요하다면 하나의 세션을 생성하고 공유하세요.
 
-<br>
-
 Once you have a session, you create a data task with one of the *dataTask()* methods. Tasks are created in a suspended state, and can be started by calling [`resume()`](https://developer.apple.com/documentation/foundation/urlsessiontask/1411121-resume).
 
 > 세션이 있으면 dataTask() 메서드 중 하나로 데이터 태스크를 생성합니다. 태스크는 중단된 상태로 생성되며 `resume()`을 호출하여 시작할 수 있습니다.
-
-<br>
 
 ## Receive Results with a Completion Handler
 
 The simplest way to fetch data is to create a data task that uses a completion handler. With this arrangement, the task delivers the server’s response, data, and possibly errors to a completion handler block that you provide. `Figure 1` shows the relationship between a session and a task, and how results are delivered to the completion handler.
 
 > 데이터를 가져오는 가장 간단한 방법은 컴플리션 핸들러를 사용하는 데이터 태스크를 생성하는 것입니다. 이 방식으로 태스크는 서버의 응답, 데이터, 가능한 에러를 당신이 제공하는 컴플리션 핸들러 블록으로 전달합니다. `Figure 1`은 세션과 태스크의 관계를 보여주며 결과가 어떻게 컴플리션 핸들러로 전달되는지 보여줍니다.  
-
-<br>
   
 **Figure 1** Creating a completion handler to receive results from a task
 
@@ -70,13 +48,9 @@ To create a data task that uses a completion handler, call the [`dataTask(with:)
 > 2. response 파라미터를 확인하여 상태 코드가 성공을 나타내는지 확인하고 MIME 타입이 예상 값인지 확인합니다. 아니라면 서버 에러를 처리하고 종료합니다.
 > 3. 필요에 따라 data 인스턴스를 사용합니다.
 
-<br>
-
 `Listing 1` shows a *startLoad()* method for fetching a URL’s contents. It starts by using the URLSession class’s shared instance to create a data task that delivers its results to a completion handler. After checking for local and server errors, this handler converts the data to a string, and uses it to populate a *WKWebView* outlet. Of course, your app might have other uses for fetched data, like parsing it into a data model.
 
 > `Listing 1`은 URL의 컨텐츠를 가져오는 startLoad() 메서드를 보여줍니다. URLSession 클래스의 shared 인스턴스를 사용하여 결과를 컴플리션 핸들러에 전달하는 데이터 태스크를 생성하는 것으로 시작합니다. 로컬 에러와 서버 에러를 확인한 후 이 핸들러는 데이터를 string으로 변환하고 이를 사용하여 WKWebView outlet을 채웁니다. 물론 가져온 데이터를 데이터 모델로 파싱 하는 것과 같이 다른 용도로 사용할 수 있습니다.  
-
-<br>
   
 **Listing 1** Creating a completion handler to receive data-loading results
 
@@ -111,15 +85,11 @@ func startLoad() {
 >
 >> 컴플리션 핸들러는 태스크가 생성된 것과 다른 Grand Central Dispatch 큐에서 호출됩니다. 그러므로 UI를 업데이트하기 위해 데이터나 에러를 사용하는 모든 작업(webView를 업데이트하는 것 같은)은 여기서 보여준 것처럼 명시적으로 메인 큐에 위치해야 합니다.
 
-<br>
-
 ## Receive Transfer Details and Results with a Delegate
 
 For a greater level of access to the task’s activity as it proceeds, when creating the data task, you can set a delegate on the session, rather than providing a completion handler. `Figure 2` shows this arrangement.
 
 > 태스크의 동작 과정에 더 높은 접근 수준을 위해서 데이터 태스크를 생성할 때 컴플리션 핸들러를 제공하는 대신에 세션에 델리게이트를 설정할 수 있습니다. `Figure 2`는 이 방법을 보여줍니다.
-
-<br>
 
 **Figure 2** Implementing a delegate to receive results from a task  
 
@@ -129,19 +99,13 @@ With this approach, portions of the data are provided to the [`urlSession(_:data
 
 > 이 방법으로 전송이 완료되거나 에러로 실패할 때까지 데이터의 일부가 도착할 때 `URLSessionDataDelegate`의 `urlSession(_:dataTask:didReceive:)` 메서드에 제공됩니다. 델리게이트는 전송이 진행됨에 따라 다른 종류의 이벤트도 수신합니다.  
 
-<br>
-
 You need to create your own URLSession instance when using the delegate approach, rather than using the URLSession class’s simple shared instance. Creating a new session allows you to set your own class as the session’s delegate, as shown in `Listing 2`.
   
 > 델리게이트 방법을 사용할 때 URLSession 클래스의 간단한 shared 인스턴스를 사용하는 것 대신 당신 자신의 URLSession 인스턴스를 생성해야 합니다. `Listing 2`에서 보여주듯이 새로운 세션을 만들면 당신 자신의 클래스를 세션의 델리게이트로 설정할 수 있습니다.  
 
-<br>
-
 Declare that your class implements one or more of the delegate protocols ([`URLSessionDelegate`](https://developer.apple.com/documentation/foundation/urlsessiondelegate), [`URLSessionTaskDelegate`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate), [`URLSessionDataDelegate`](https://developer.apple.com/documentation/foundation/urlsessiondatadelegate), and `URLSessionDownloadDelegate`). Then create the URL session instance with the initializer [`init(configuration:delegate:delegateQueue:)`](https://developer.apple.com/documentation/foundation/urlsession/1411597-init). You can customize the configuration instance used with this initializer. For example, it’s a good idea to set [`waitsForConnectivity`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/2908812-waitsforconnectivity) to *true*. That way, the session waits for suitable connectivity, rather than failing immediately if the required connectivity is unavailable.
   
 > 클래스가 하나 이상의 델리게이트 프로토콜(`URLSessionDelegate`, `URLSessionTaskDelegate`, `URLSessionDataDelegate`, `URLSessionDownloadDelegate`)을 구현하도록 선언합니다. 그리고 이니셜라이저 `init(configuration:delegate:delegateQueue:)`으로 URL session 인스턴스를 생성합니다. 이 이니셜라이저와 함께 사용되는 configuration 인스턴스를 커스터마이징 할 수 있습니다. 예를 들어 `waitsForConnectivity`를 true로 설정하는 것이 좋습니다. 이 방법으로 세션은 필요한 연결이 허용되지 않은 경우 즉시 실패하는 대신에 적합한 연결을 기다립니다.  
-
-<br>
   
 **Listing 2** Creating a URLSession that uses a delegate
 
@@ -166,8 +130,6 @@ private lazy var session: URLSession = {
 > - `urlSession(_:dataTask:didReceive:completionHandler:)`은 응답에 성공적인 HTTP 상태 코드가 있는지, MIME 타입이 text/html 또는 text/plain 인지 확인합니다. 이 중 하나라도 충족하지 않으면 태스크는 취소되고, 그렇지 않으면 계속 진행됩니다.
 > - `urlSession(_:dataTask:didReceive:)`는 태스크에서 수신한 각 Data 인스턴스를 receivedData 버퍼에 추가합니다.
 > - `urlSession(_:task:didCompleteWithError:)`는 먼저 전송 단계 에러가 발생했는지 확인합니다. 에러가 없다면 *receivedData* 버퍼를 string으로 변환을 시도하고 webView의 컨텐츠로 설정합니다.
-
-<br>
 
 **Listing 3** Using a Delegate with a URL session data task
 
@@ -213,15 +175,9 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 }
 ~~~
 
-<br>
-
 The various delegate protocols offer methods beyond those shown in the above code, for handling authentication challenges, following redirects, and other special cases. Using a URL Session, in the URLSession discussion, describes the various callbacks that may occur during a transfer.
 
 > 다양한 델리게이트 프로토콜은 인증 처리 문제, 후속 리디렉트, 다른 특별한 경우 등 위 코드에 나와있는 것을 넘어서는 메서드를 제공합니다. URLSession discussion에서 URLSession을 사용할 때 전송 중 발생하는 다양한 콜백을 설명합니다.
-
-<br><br><br>
-
-
 
 ## 📌 샘플 프로젝트
 

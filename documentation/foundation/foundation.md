@@ -1,12 +1,10 @@
-# [Foundation](https://developer.apple.com/documentation/foundation)
+# Foundation
 
-`Framework`
+`Framework` [`원문`](https://developer.apple.com/documentation/foundation)
 
 Access essential data types, collections, and operating-system services to define the base layer of functionality for your app.
 
 > 필수적인 데이터 타입, 컬렉션, 운영체제 서비스에 접근하여 앱을 위한 기본 기능 계층을 정의합니다.
-
-<br>
 
 ## Overview
 
