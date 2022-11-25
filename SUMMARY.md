@@ -1,7 +1,7 @@
 # Summary
 
 - [애플 공식 자료로 학습하기](README.md)
-- [용어](GLOSSARY.md)
+- [용어 사전](GLOSSARY.md)
 
 ## Developer Documentation
 
