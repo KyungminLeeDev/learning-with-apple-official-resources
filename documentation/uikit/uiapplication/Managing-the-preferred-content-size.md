@@ -2,11 +2,11 @@
 
 `Topic` [`원문`](https://developer.apple.com/documentation/uikit/uiapplication)
 
-- var [preferredContentSizeCategory](#preferredContentSizeCategory): UIContentSizeCategory 
+- var [preferredContentSizeCategory](#preferredcontentsizecategory): UIContentSizeCategory 
 - struct [UIContentSizeCategory](#uicontentsizecategory)
 - protocol [UIContentSizeCategoryAdjusting](#uicontentsizecategoryadjusting)
-- static let [didChangeNotification](#didChangeNotification): NSNotification.Name
-- static let [newValueUserInfoKey](#newValueUserInfoKey): String
+- static let [didChangeNotification](#didchangenotification): NSNotification.Name
+- static let [newValueUserInfoKey](#newvalueuserinfokey): String
 
 ## [preferredContentSizeCategory](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory)
 

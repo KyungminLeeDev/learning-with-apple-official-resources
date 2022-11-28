@@ -11,7 +11,7 @@
 - [Swift](documentation/swift/swift.md)
     - [Preventing Timing Problems When Using Closures](documentation/swift/preventing-timing-problems-when-using-closures.md)
 - [UIKit](documentation/uikit/uikit.md)
-    - UIApplication
+    - [UIApplication](documentation/uikit/uiapplication/uiapplication.md)
         - [Managing the preferred content size](documentation/uikit/uiapplication/Managing-the-preferred-content-size.md)
     - [UIFont](documentation/uikit/uifont/uifont.md)
         - [Creating Self-Sizing Table View Cells](documentation/uikit/uifont/creating_self-sizing_table_view_cells.md)
