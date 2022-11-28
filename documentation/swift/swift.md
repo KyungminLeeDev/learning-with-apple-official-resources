@@ -6,8 +6,6 @@ Build apps using a powerful open language.
 
 > 강력한 오픈 언어를 사용하여 앱을 빌드합니다.
 
-<br>
-
 ## Overview
 
 Swift includes modern features like type inference, optionals, and closures, which make the syntax concise yet expressive. Swift ensures your code is fast and efficient, while its memory safety and native error handling make the language safe by design. Writing Swift code is interactive and fun in Swift Playgrounds, playgrounds in Xcode, and REPL.
@@ -29,15 +27,11 @@ print(interestingNumbers["primes"]!)
 // Prints "[17, 13, 11, 7, 5, 3, 2]"
 ~~~
 
-<br>
-
 ## Learn Swift
 
 If you’re new to Swift, read [`The Swift Programming Language`](https://docs.swift.org/swift-book/) for a quick tour, a comprehensive language guide, and a full reference manual. If you’re new to programming, check out [`Swift Playgrounds`](https://www.apple.com/swift/playgrounds/) on iPad.
 
 > 스위프트가 처음이라면, `The Swift Programming Language`의 tour, language guide, language reference를 읽으세요. 프로그래밍이 처음이라면 iPad에서 `Swift Playgrounds`를 살펴보세요.  
-
-<br>
 
 Swift is developed in the open. To learn more about the open source Swift project and community, visit [`Swift.org`](https://swift.org/).
   

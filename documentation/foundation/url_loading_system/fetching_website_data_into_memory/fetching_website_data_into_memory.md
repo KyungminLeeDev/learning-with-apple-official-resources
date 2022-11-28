@@ -179,9 +179,9 @@ The various delegate protocols offer methods beyond those shown in the above cod
 
 > 다양한 델리게이트 프로토콜은 인증 처리 문제, 후속 리디렉트, 다른 특별한 경우 등 위 코드에 나와있는 것을 넘어서는 메서드를 제공합니다. URLSession discussion에서 URLSession을 사용할 때 전송 중 발생하는 다양한 콜백을 설명합니다.
 
-## 📌 예시 프로젝트 만들기
+## 📌 예시 프로젝트
 
-배운 내용을 예시 프로젝트로 만들어 확인해보자.
+배운 내용을 예시 프로젝트로 만들어 확인해 보자.
 
 ### 📌 [Receive Results with a Completion Handler 예시](./ReceiveResultsWithACompletionHandler)
 

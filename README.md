@@ -19,7 +19,7 @@
     - `API Collection` [URL Loading System](./documentation/foundation/url_loading_system/url_loading_system.md)
         - `Article` [Fetching Website Data into Memory](./documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md)
             - 📌 [Receive Results with a Completion Handler 예시](./documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md#-receive-results-with-a-completion-handler-예시)
-            - 📌 [Receive Transfer Details and Results with a Delegate 샘플](./documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md#-receive-transfer-details-and-results-with-a-delegate-예시)
+            - 📌 [Receive Transfer Details and Results with a Delegate 예시](./documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md#-receive-transfer-details-and-results-with-a-delegate-예시)
 - [Swift](./documentation/swift/swift.md)
     - `Article` [Preventing Timing Problems When Using Closures](./documentation/swift/preventing-timing-problems-when-using-closures.md) 
         - 📌 [비동기 호출의 결과를 잘못 사용하는 예](./documentation/swift/preventing-timing-problems-when-using-closures.md#-비동기-호출의-결과를-잘못-사용하는-예)
