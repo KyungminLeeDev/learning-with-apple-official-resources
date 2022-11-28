@@ -1,6 +1,6 @@
-# [Swift](https://developer.apple.com/documentation/swift)
+# Swift
 
-`Framework`
+`Framework` [`원문`](https://developer.apple.com/documentation/swift)
 
 Build apps using a powerful open language.
 
