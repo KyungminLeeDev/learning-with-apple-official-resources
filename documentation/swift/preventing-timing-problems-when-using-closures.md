@@ -18,6 +18,15 @@ Many of the APIs you use in Swift take a closure—or a function passed as an in
 >
 >> 클로저가 호출되는 시기에 대해 잘못 추정하면 데이터가 불완전하고 앱이 크래시 될 수 있습니다.
 
+
+{% hint style="warning" %}
+**Improtant**
+
+Making false assumptions about when a closure is called can lead to data inconsistency and app crashes.
+
+> 클로저가 호출되는 시기에 대해 잘못 추정하면 데이터가 불완전하고 앱이 크래시 될 수 있습니다.
+{% endhint %}
+
 ## Understand the Results of Synchronous and Asynchronous Calls
 
 When you pass a closure to an API, consider when that closure will be called relative to the other code in your app. In synchronous APIs, the result of calling the closure will be available immediately after you pass the closure. In asynchronous APIs, the result won’t be available until sometime later; this difference affects how you write code both in your closure as well as the code following your closure.
