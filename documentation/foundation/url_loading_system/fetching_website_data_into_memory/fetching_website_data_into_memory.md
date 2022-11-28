@@ -16,11 +16,11 @@ You use a URL session instance to create the task. If your needs are fairly simp
 
 > URL session 인스턴스를 사용하여 태스크를 생성합니다. 요구 사항이 매우 간단하다면 `URLSession`의 `shared` 인스턴스를 사용할 수 있습니다. delegate 콜백을 통해 상호작용하려면 shared 인스턴스를 사용하는 대신에 session을 생성해야 합니다. session을 생성할 때 `URLSessionConfiguration` 인스턴스를 사용하고 `URLSessionDelegate` 또는 그 하위 프로토콜 중 하나를 정의하는 클래스에도 전달합니다. 세션은 다수의 태스크를 생성하는 데 사용될 수 있으므로 고유한 환경 설정이 필요하다면 세션을 생성하고 프로퍼티로 저장하세요.
 
-> **Note**
->
-> Be careful to not create more sessions than you need. For example, if you have several parts of your app that need a similarly configured session, create one session and share it among them.
->
->> 필요 이상으로 세션을 생성하지 않도록 주의하세요. 예를 들어 앱의 여러 부분에서 유사한 구성의 세션이 필요하다면 하나의 세션을 생성하고 공유하세요.
+    **Note**
+
+    Be careful to not create more sessions than you need. For example, if you have several parts of your app that need a similarly configured session, create one session and share it among them.
+
+    > 필요 이상으로 세션을 생성하지 않도록 주의하세요. 예를 들어 앱의 여러 부분에서 유사한 구성의 세션이 필요하다면 하나의 세션을 생성하고 공유하세요.
 
 Once you have a session, you create a data task with one of the *dataTask()* methods. Tasks are created in a suspended state, and can be started by calling [`resume()`](https://developer.apple.com/documentation/foundation/urlsessiontask/1411121-resume).
 
