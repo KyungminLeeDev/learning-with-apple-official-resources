@@ -12,20 +12,11 @@ Many of the APIs you use in Swift take a closure—or a function passed as an in
 
 > 스위프트에서 사용하는 많은 API는 클로저(또는 인스턴스로 전달된 함수)를 파라미터로 사용합니다. 클로저는 앱의 여러 부분과 소통 상호작용하는 코드를 넣을 수 있으므로, 당신이 전달하거나 API로 호출될 수 있는 다양한 클로저를 이해하는 것은 중요합니다. API로 전달한 클로저는 동기적으로(즉시) 또는 비동기적으로(얼마 뒤에) 호출될 수 있습니다. 그것들은 한번, 여러 번 호출되거나 호출되지 않습니다.
 
-> **Important**  
->
-> Making false assumptions about when a closure is called can lead to data inconsistency and app crashes.
->
->> 클로저가 호출되는 시기에 대해 잘못 추정하면 데이터가 불완전하고 앱이 크래시 될 수 있습니다.
-
-
-{% hint style="warning" %}
-**Improtant**
+### Important  
 
 Making false assumptions about when a closure is called can lead to data inconsistency and app crashes.
 
 > 클로저가 호출되는 시기에 대해 잘못 추정하면 데이터가 불완전하고 앱이 크래시 될 수 있습니다.
-{% endhint %}
 
 ## Understand the Results of Synchronous and Asynchronous Calls
 
