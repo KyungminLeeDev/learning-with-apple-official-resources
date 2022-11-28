@@ -1,6 +1,6 @@
-# [Preventing Timing Problems When Using Closures](https://developer.apple.com/documentation/swift/preventing_timing_problems_when_using_closures)
+# Preventing Timing Problems When Using Closures
 
-`Article`
+`Article` [`원문`](https://developer.apple.com/documentation/swift/preventing_timing_problems_when_using_closures)
 
 Understand how different API calls to your closures can affect your app.
 
