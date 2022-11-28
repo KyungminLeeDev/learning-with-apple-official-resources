@@ -10,3 +10,8 @@
         - [Fetching Website Data into Memory](documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md)
 - [Swift](documentation/swift/swift.md)
     - [Preventing Timing Problems When Using Closures](documentation/swift/preventing-timing-problems-when-using-closures.md)
+- [UIKit](documentation/uikit/uikit.md)
+    - UIApplication
+        - [Managing the preferred content size](documentation/uikit/uiapplication/Managing-the-preferred-content-size.md)
+    - [UIFont](documentation/uikit/uifont/uifont.md)
+        - [Creating Self-Sizing Table View Cells](documentation/uikit/uifont/creating_self-sizing_table_view_cells.md)

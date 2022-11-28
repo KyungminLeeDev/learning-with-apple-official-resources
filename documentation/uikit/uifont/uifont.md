@@ -1,6 +1,6 @@
 # UIFont
 
-`Class`
+`Class` [`원문`](https://developer.apple.com/documentation/uikit/uifont)
 
 An object that provides access to the font’s characteristics.
 

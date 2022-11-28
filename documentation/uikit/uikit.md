@@ -1,12 +1,10 @@
-# [UIKit](https://developer.apple.com/documentation/uikit)
+# UIKit
 
-`Framework`
+`Framework` [`원문`](https://developer.apple.com/documentation/uikit)
 
 Construct and manage a graphical, event-driven user interface for your iOS, iPadOS, or tvOS app.
 
 > iOS, iPadOS 또는 tvOS 앱을 위한 그래픽적인, 이벤트 주도 사용자 인터페이스를 구성하고 다룹니다. 
-
-<br>
 
 ## Overview
 
@@ -20,19 +18,13 @@ UIKit also includes support for animations, documents, drawing and printing, tex
 
 > UIKit은 애니메이션, 문서, 그리기와 출력, 텍스트 관리와 디스플레이, 검색, 앱 확장, 자원 관리, 현재 기기에 대한 정보 가져오기를 위한 지원을 포함합니다. 접근성 지원을 커스터마이징 할 수 있고, 다른 언어, 국가, 문화적 지역을 위한 앱의 인터페이스를 지역화할 수 있습니다.
 
-<br>
-
 UIKit works seamlessly with the [`SwiftUI`](https://developer.apple.com/documentation/swiftui) framework, so you can implement parts of your UIKit app in SwiftUI or mix interface elements between the two frameworks. For example, you can place UIKit views and view controllers inside SwiftUI views, and vice versa.
 
 > UIKit은 `SwiftUI` 프레임워크와 매끄럽게 작동되어 SwiftUI에서 UIKit 앱의 일부를 구현하거나 두 프레임워크 사이의 인터페이스 요소를 혼합할 수 있습니다. 예를 들면, SwiftUI 뷰 안에 UIKit의 뷰와 뷰 컨트롤러를 넣을 수 있고, 그 반대도 가능합니다.
 
-<br>
-
 To build a macOS app, you can use SwiftUI to create an app that works across all of Apple’s platforms, or use [`AppKit`](https://developer.apple.com/documentation/appkit) to create an app for Mac only. Alternatively, you can bring your UIKit iPad app to the Mac with [`Mac Catalyst`](https://developer.apple.com/documentation/uikit/mac_catalyst).
 
 > macOS 앱을 만들기 위해, SwiftUI를 사용하여 애플의 모든 플랫폼에서 작동하는 앱을 만들거나, `AppKit`을 사용하여 Mac 전용 앱을 만들 수 있습니다. 그 대신에, UIKit iPad 앱을 `Mac Catalyst`를 사용하여 Mac으로 가져올 수 있습니다.
-
-<br>
 
 > **Important**
 >
