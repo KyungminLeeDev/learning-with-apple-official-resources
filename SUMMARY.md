@@ -8,6 +8,5 @@
 - [Foundation](documentation/foundation/foundation.md)
     - [URL Loading System](documentation/foundation/url_loading_system/url_loading_system.md)
         - [Fetching Website Data into Memory](documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md)
-            - [예시 프로젝트](documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md#Example-Project)
 - [Swift](documentation/swift/swift.md)
     - [Preventing Timing Problems When Using Closures](documentation/swift/preventing-timing-problems-when-using-closures.md)
