@@ -1,11 +1,6 @@
-# [공식문서로 Swift 배우기] A Swift Tour - 8. Generics
-
-- 공식 자료를 학습하고 정리했으며, 잘못된 정보가 있을 수 있습니다.
-- 원문: [Swift.org - A Swift Tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html)
-- 참고: [bbiguduk님의 한국어 번역본](https://bbiguduk.gitbook.io/swift/welcome-to-swift/swift-a-swift-tour)
-- [GitHub에서 보기](https://github.com/KyungminLeeDev/learning-with-apple-official-resources)
-
 # Generics
+
+[`원문`](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html#ID624)
 
 ## 제네릭 함수, 타입 만들기
 
