@@ -37,17 +37,15 @@
 
 ## Swift.org
 
-- A Swift Tour
-    - [a-swift-tour.playground](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour.playground)
-    - [0. First program](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-0-first-program.md)
-    - [1. Simple Values](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-1-simple-values.md)
-    - [2. Control Flow](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-2-control-flow.md)
-    - [3. Functions and Closures](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-3-functions-and-closures.md)
-    - [4. Objects and Classes](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-4-objects-and-classes.md)
-    - [5. Enumerations and Structures](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-5-enumerations-and-structures.md)
-    - [6. Protocols and Extensions](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-6-protocols-and-extensions.md)
-    - [7. Error Handling](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-7-error-handling.md)
-    - [8. Generics](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-8-generics.md)
+- [A Swift Tour](./swift.org/swift-book/GuidedTour/a-swift-tour-0-first-program.md)
+    - [Simple Values](./swift.org/swift-book/GuidedTour/a-swift-tour-1-simple-values.md)
+    - [Control Flow](./swift.org/swift-book/GuidedTour/a-swift-tour-2-control-flow.md)
+    - [Functions and Closures](./swift.org/swift-book/GuidedTour/a-swift-tour-3-functions-and-closures.md)
+    - [Objects and Classes](./swift.org/swift-book/GuidedTour/a-swift-tour-4-objects-and-classes.md))
+    - [Enumerations and Structures](./swift.org/swift-book/GuidedTour/a-swift-tour-5-enumerations-and-structures.md)
+    - [Protocols and Extensions](./swift.org/swift-book/GuidedTour/a-swift-tour-6-protocols-and-extensions.md)
+    - [Error Handling](./swift.org/swift-book/GuidedTour/a-swift-tour-7-error-handling.md)
+    - [Generics](./swift.org/swift-book/GuidedTour/a-swift-tour-8-generics.md)
 
 <br><br><br>
 
