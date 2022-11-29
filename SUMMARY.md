@@ -21,7 +21,6 @@
 
 ## Swift.org
 
-- Swift Book
-    - [A Swift Tour](Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-0-first-program.md)
-        - [Simple Values](Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-1-simple-values.md)
-        - [Control Flow](Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-2-control-flow.md)
+- [A Swift Tour](swift.org/swift-book/GuidedTour/a-swift-tour-0-first-program.md)
+    - [Simple Values](swift.org/swift-book/GuidedTour/a-swift-tour-1-simple-values.md)
+    - [Control Flow](swift.org/swift-book/GuidedTour/a-swift-tour-2-control-flow.md)
