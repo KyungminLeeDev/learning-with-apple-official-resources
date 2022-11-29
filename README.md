@@ -24,14 +24,33 @@
     - `Article` [Preventing Timing Problems When Using Closures](./documentation/swift/preventing-timing-problems-when-using-closures.md) 
         - 📌 [비동기 호출의 결과를 잘못 사용하는 예](./documentation/swift/preventing-timing-problems-when-using-closures.md#-비동기-호출의-결과를-잘못-사용하는-예)
 - [UIKit](./documentation/uikit/uikit.md)
+    - `Class` [UIApplication](./documentation/uikit/uiapplication/uiapplication.md)
+        - `Topic` [Managing the preferred content size](./documentation/uikit/uiapplication/Managing-the-preferred-content-size.md)
+        - 🧑🏻‍💻 [텍스트 크기 설정값 가져오기 예시](./documentation/uikit/uiapplication/Getting-the-Font-Sizing-Preference-Example.md)
     - `Class` [UIFont](./documentation/uikit/uifont/uifont.md)
         - `Sample Code` [Creating Self-Sizing Table View Cells](./documentation/uikit/uifont/creating_self-sizing_table_view_cells.md)
             - [Sample Code Project](./documentation/uikit/uifont/CreatingSelfSizingTableViewCells)
-    - `Class` UIApplication
-        - `Topic` [Managing the preferred content size](./documentation/uikit/uiapplication/Managing-the-preferred-content-size.md)
-        - 🧑🏻‍💻 [텍스트 크기 설정값 가져오기 예제](./documentation/uikit/uiapplication/Getting-the-Font-Sizing-Preference-Example.md)
 
 <br><br><br>
+
+
+
+## Swift.org
+
+- A Swift Tour
+    - [a-swift-tour.playground](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour.playground)
+    - [0. First program](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-0-first-program.md)
+    - [1. Simple Values](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-1-simple-values.md)
+    - [2. Control Flow](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-2-control-flow.md)
+    - [3. Functions and Closures](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-3-functions-and-closures.md)
+    - [4. Objects and Classes](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-4-objects-and-classes.md)
+    - [5. Enumerations and Structures](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-5-enumerations-and-structures.md)
+    - [6. Protocols and Extensions](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-6-protocols-and-extensions.md)
+    - [7. Error Handling](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-7-error-handling.md)
+    - [8. Generics](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-8-generics.md)
+
+<br><br><br>
+
 
 
 
@@ -80,22 +99,3 @@
     > 이벤트 저장소에 데이터를 저장할 때 Today 앱과 EventKit의 미리 알림을 동기화합니다.
     - [📌 compactMap과 map의 차이](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-9-System-Frameworks.md#-compactmap과-map의-차이)
     - [📌 더 이상 사용되지 않는 옵저버 제거](./Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-9-System-Frameworks.md#-더-이상-사용되지-않는-옵저버-제거)
-
-<br><br><br>
-
-
-
-## Swift.org
-
-- A Swift Tour
-    - [a-swift-tour.playground](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour.playground)
-    - [0. First program](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-0-first-program.md)
-    - [1. Simple Values](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-1-simple-values.md)
-    - [2. Control Flow](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-2-control-flow.md)
-    - [3. Functions and Closures](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-3-functions-and-closures.md)
-    - [4. Objects and Classes](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-4-objects-and-classes.md)
-    - [5. Enumerations and Structures](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-5-enumerations-and-structures.md)
-    - [6. Protocols and Extensions](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-6-protocols-and-extensions.md)
-    - [7. Error Handling](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-7-error-handling.md)
-    - [8. Generics](./Swift.org/welcome-to-swift/a-swift-tour/a-swift-tour-8-generics.md)
-- Language Guide
