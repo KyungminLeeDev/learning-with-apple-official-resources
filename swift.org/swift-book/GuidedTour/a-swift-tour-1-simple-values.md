@@ -1,11 +1,6 @@
-# [공식문서로 Swift 배우기] A Swift Tour - 1. Simple Values
-
-- 공식 자료를 학습하고 정리했으며, 잘못된 정보가 있을 수 있습니다.
-- 원문: [Swift.org - A Swift Tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html)
-- 참고: [bbiguduk님의 한국어 번역본](https://bbiguduk.gitbook.io/swift/welcome-to-swift/swift-a-swift-tour)
-- [GitHub Repository에서 보기](https://github.com/KyungminLeeDev/learning-with-apple-official-resources)
-
 # Simple Values
+
+[`원문`](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html#ID461)
 
 ## 상수와 변수
 
@@ -36,6 +31,8 @@ print(implicitDouble)   // 70.0
 print(explicitDouble)   // 70.0
 ~~~
 
+> EXPERIMENT
+>
 > 명시적 Float 타입이고 값이 4인 상수 만들기
 
 ~~~swift
@@ -55,6 +52,8 @@ let widthLabel = label + String(width)
 print(widthLabel) // The width is 94
 ~~~
 
+> EXPERIMENT
+>
 > 다른 타입을 연산하려 하면 발생하는 에러
 
 ~~~swift
@@ -73,6 +72,8 @@ let appleSumarry = "I have \(apples) apples."
 let fruitSumarry = "I have \(apples + oranges) pieces of fruit."
 ~~~
 
+> EXPERIMENT
+>
 > `\()`를 사용하여 문자열에 부동소수점 계산을 넣고, 인사말에 이름을 추가하기
 
 ~~~swift
