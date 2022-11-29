@@ -1,11 +1,6 @@
-# [공식문서로 Swift 배우기] A Swift Tour - 2. Control Flow
-
-- 공식 자료를 학습하고 정리했으며, 잘못된 정보가 있을 수 있습니다.
-- 원문: [Swift.org - A Swift Tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html)
-- 참고: [bbiguduk님의 한국어 번역본](https://bbiguduk.gitbook.io/swift/welcome-to-swift/swift-a-swift-tour)
-- [GitHub Repository에서 보기](https://github.com/KyungminLeeDev/learning-with-apple-official-resources)
-
 # Control Flow
+
+[`원문`](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html#ID462)
 
 ## 조건문과 반복문
 
@@ -27,7 +22,7 @@ for score in individualScores {
 }
 print(teamScore)    // 11
 
-// 조건과 반복문의 변수를 감싸는 소괄호는 선택사항이므로 가독성이 좋아지는 경우 사용하면 될 것 같다.
+// 조건과 반복문의 변수를 감싸는 소괄호는 선택사항이므로 가독성이 좋아지는 경우 사용하면 되겠다.
 for (score) in individualScores {
     if (score > 50) {
         teamScore += 3
@@ -60,6 +55,8 @@ print(greeting)
 // Hello, John Appleseed
 ~~~
 
+> EXPERIMENT
+>
 > `optionalName`이 `nil` 일 때 다른 인사말 하기  
 > 옵셔널 값이 `nil`이면, 조건문은 `false`이고 해당 코드는 건너뛴다. `nil`이 아니라면 옵셔널 값은 언랩핑되어 `let` 뒤의 상수에 할당되고, 언랩핑된 값은 코드 블록 안에서 사용할 수 있다.
 
@@ -109,6 +106,8 @@ default:
 // Is it a spicy red pepper?
 ~~~
 
+> EXPERIMENT
+>
 > default case를 지우면 아래 에러가 발생한다.
 
 ~~~swift
@@ -137,6 +136,8 @@ print(largest)
 // 25
 ~~~
 
+> EXPERIMENT
+>
 > `_`를 `key`로 변경해서 사용해보기
 
 ~~~swift
