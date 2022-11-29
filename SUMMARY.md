@@ -37,12 +37,12 @@
 ## iOS App Dev Tutorials
 
 - UIKit
-    - [UIKit essentials](Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-1-UIKit-Essentials.md)
-    - [Model-View-Controller](Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-2-Model-View-Controller.md)
-    - [Navigation](Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-3-Navigation.md)
-    - [Table Views and Data Sources](Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-4-Table-Views-and-Data-Sources.md)
-    - [Editable Cells](Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-5-Editable-Cells.md)
-    - [Modality](Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-6-Modality.md)
-    - [Filtering Data](Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-7-Filtering-Data.md)
-    - [Design and Animation](Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-8-Design-and-Animation.md)
-    - [System Frameworks](Tutorials/iOS-App-Dev-Tutorials/UIKit/Tutorial-UIKit-9-System-Frameworks.md)
+    - [UIKit essentials](Tutorials/iOS-App-Dev-Tutorials/UIKit/1-UIKit-Essentials.md)
+    - [Model-View-Controller](Tutorials/iOS-App-Dev-Tutorials/UIKit/2-Model-View-Controller.md)
+    - [Navigation](Tutorials/iOS-App-Dev-Tutorials/UIKit/3-Navigation.md)
+    - [Table Views and Data Sources](Tutorials/iOS-App-Dev-Tutorials/UIKit/4-Table-Views-and-Data-Sources.md)
+    - [Editable Cells](Tutorials/iOS-App-Dev-Tutorials/UIKit/5-Editable-Cells.md)
+    - [Modality](Tutorials/iOS-App-Dev-Tutorials/UIKit/6-Modality.md)
+    - [Filtering Data](Tutorials/iOS-App-Dev-Tutorials/UIKit/7-Filtering-Data.md)
+    - [Design and Animation](Tutorials/iOS-App-Dev-Tutorials/UIKit/8-Design-and-Animation.md)
+    - [System Frameworks](Tutorials/iOS-App-Dev-Tutorials/UIKit/9-System-Frameworks.md)
