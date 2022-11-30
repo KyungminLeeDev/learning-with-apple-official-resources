@@ -48,7 +48,7 @@
     - [Ch3. Navigation](Tutorials/iOS-App-Dev-Tutorials/UIKit/3-0-Navigation.md)
         - [Creating a Detail View Controller](Tutorials/iOS-App-Dev-Tutorials/UIKit/3-1-Creating-a-Detail-View-Controller.md)
         - [Creating a Navigation Stack](Tutorials/iOS-App-Dev-Tutorials/UIKit/3-2-Creating-a-Navigation-Stack.md)
-    - [Ch4. Table Views and Data Sources](Tutorials/iOS-App-Dev-Tutorials/UIKit/4-Table-Views-and-Data-Sources.md)
+    - [Ch4. Table Views and Data Sources](Tutorials/iOS-App-Dev-Tutorials/UIKit/4-0-Table-Views-and-Data-Sources.md)
         - [Accessing your Entities](Tutorials/iOS-App-Dev-Tutorials/UIKit/4-1-Accessing-your-Entities.md)
         - [Adopting Protocols and Inheritance](Tutorials/iOS-App-Dev-Tutorials/UIKit/4-2-Adopting-Protocols-and-Inheritance.md)
         - [Configuring Table View Cells](Tutorials/iOS-App-Dev-Tutorials/UIKit/4-3-Configuring-Table-View-Cells.md)
