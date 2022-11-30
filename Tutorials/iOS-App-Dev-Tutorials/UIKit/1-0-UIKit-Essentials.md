@@ -3,12 +3,6 @@
 Xcode와 Interface Builder를 사용하여 적응형 인터페이스를 설계합니다.
 
 
-<br/><br/><br/>
-
-
-
-
-
 
 <!-- # [공식문서로 iOS 배우기] UIKit Tutorial - 1. UIKit Essentials
 
