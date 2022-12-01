@@ -65,5 +65,7 @@
     - [Ch7. Filtering Data](Tutorials/iOS-App-Dev-Tutorials/UIKit/7-0-Filtering-Data.md)
         - [Using Higher-Order Functions](Tutorials/iOS-App-Dev-Tutorials/UIKit/7-1-Using-Higher-Order-Functions.md)
         - [Working with a Dynamic Data Source](Tutorials/iOS-App-Dev-Tutorials/UIKit/7-2-Working-with-a-Dynamic-Data-Source.md)
-    - [Design and Animation](Tutorials/iOS-App-Dev-Tutorials/UIKit/8-Design-and-Animation.md)
+    - [Ch8. Design and Animation](Tutorials/iOS-App-Dev-Tutorials/UIKit/8-0-Design-and-Animation.md)
+        - [Creating a Progress View](Tutorials/iOS-App-Dev-Tutorials/UIKit/8-1-Creating-a-Progress-View.md)
+        - [Adhering to Design](Tutorials/iOS-App-Dev-Tutorials/UIKit/8-2-Adhering-to-Design.md)
     - [System Frameworks](Tutorials/iOS-App-Dev-Tutorials/UIKit/9-System-Frameworks.md)
