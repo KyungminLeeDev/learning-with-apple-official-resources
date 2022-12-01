@@ -36,11 +36,10 @@ self.doneButtonAction = doneButtonAction
 
 ## 4. Check Your Understanding
 
-### Q1.
+### Q1
 
-Today앱에는 Reminder, ReminderViewController 클래스가 있습니다.
-
-`ReminderViewController`의 메서드에서 접근할 수 있는 `Reminder`의 프로퍼티는 무엇인가요?
+Today앱에는 Reminder, ReminderViewController 클래스가 있습니다. 
+ `ReminderViewController`의 메서드에서 접근할 수 있는 `Reminder`의 프로퍼티는 무엇인가요?
 
 ~~~swift
 struct Reminder {
@@ -58,10 +57,9 @@ class ReminderViewController: UIViewController {
 
 A. `isDone`과 `dateString`
 
-### Q2. 
+### Q2
 
-UITableViewDelegate 프로토콜을 준수하는 커스텀 클래스를 작성하고 있습니다. UITableViewDelegate 프로토콜은 NSObjectProtocol을 준수합니다.  
-  
+UITableViewDelegate 프로토콜을 준수하는 커스텀 클래스를 작성하고 있습니다.  UITableViewDelegate 프로토콜은 NSObjectProtocol을 준수합니다.  
 클래스를 작성하는 가장 쉬운 방법은 무엇인가요?
 
-NSObject의 하위클래스를 만들고 UITableViewDelegate를 모두 부합하는 커스텀 함수를 작성합니다.
+A. NSObject의 하위클래스를 만들고 UITableViewDelegate를 모두 부합하는 커스텀 함수를 작성합니다.

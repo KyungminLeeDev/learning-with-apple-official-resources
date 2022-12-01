@@ -44,7 +44,7 @@ date label cell을 제외한 나머지 cell은 모두 스토리보드에서 해�
 
 ## 6. Check Your Understanding
 
-### Q1. 
+### Q1
 
 UIViewController의 하위클래스에  아래 메서드를 정의했다.
 
@@ -61,13 +61,13 @@ A. 버튼은 기본 action을 호출합니다.
 
 editButtonItem의 기본 action인 setEditing(_:, animated:)이 호출되며 이를 override하여 커스텀 할 수 있습니다.
 
-### Q2. 
+### Q2
 
 table view가 존재하지 않는 identifier를 사용하여 cell을 dequeue하려 시도하면 무슨일이 발생하나요?
 
 A. 앱이 종료됩니다.
 
-### Q3.
+### Q3
 
 아래 data source 메서드에서 table view의 행을 나타내는 정수를 찾으려면 어떻게 해야하나요? 
 
@@ -86,3 +86,6 @@ A. `let row = indexPath.row`
 튜툐리얼에서 Date Picker의 Preferred Style을 따로 건들지 않으므로 기본값인 Automatic으로 설정돼있다. 근데 iOS 14부터는 Date Picker의 기본 sytle이 Compact라서 Compact Sytle로 보이는 것이다.  
   
 시뮬레이터의 iOS 버전에 상관없이 Wheels로 표시되도록 스토리보드에서 Date Picker의 Preferred Sytle 옵션을 `Wheels`로 변경해 주자.
+
+
+
