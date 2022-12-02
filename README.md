@@ -41,7 +41,7 @@
     - [Simple Values](./swift.org/swift-book/GuidedTour/a-swift-tour-1-simple-values.md)
     - [Control Flow](./swift.org/swift-book/GuidedTour/a-swift-tour-2-control-flow.md)
     - [Functions and Closures](./swift.org/swift-book/GuidedTour/a-swift-tour-3-functions-and-closures.md)
-    - [Objects and Classes](./swift.org/swift-book/GuidedTour/a-swift-tour-4-objects-and-classes.md))
+    - [Objects and Classes](./swift.org/swift-book/GuidedTour/a-swift-tour-4-objects-and-classes.md)
     - [Enumerations and Structures](./swift.org/swift-book/GuidedTour/a-swift-tour-5-enumerations-and-structures.md)
     - [Protocols and Extensions](./swift.org/swift-book/GuidedTour/a-swift-tour-6-protocols-and-extensions.md)
     - [Error Handling](./swift.org/swift-book/GuidedTour/a-swift-tour-7-error-handling.md)
