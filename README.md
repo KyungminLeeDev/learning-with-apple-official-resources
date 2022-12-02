@@ -22,7 +22,7 @@
             - 📌 [Receive Transfer Details and Results with a Delegate 예시](./documentation/foundation/url_loading_system/fetching_website_data_into_memory/fetching_website_data_into_memory.md#-receive-transfer-details-and-results-with-a-delegate-예시)
 - [Swift](./documentation/swift/swift.md)
     - `Article` [Preventing Timing Problems When Using Closures](./documentation/swift/preventing-timing-problems-when-using-closures.md) 
-        - 📌 [비동기 호출의 결과를 잘못 사용하는 예](./documentation/swift/preventing-timing-problems-when-using-closures.md#-비동기-호출의-결과를-잘못-사용하는-예)
+        - 📌 [비동기 호출의 결과를 잘못 사용하는 예](./documentation/swift/preventing-timing-problems-when-using-closures.md#-비동기-호출의-결과를-잘못-사용하는-예시)
 - [UIKit](./documentation/uikit/uikit.md)
     - `Class` [UIApplication](./documentation/uikit/uiapplication/uiapplication.md)
         - `Topic` [Managing the preferred content size](./documentation/uikit/uiapplication/Managing-the-preferred-content-size.md)
