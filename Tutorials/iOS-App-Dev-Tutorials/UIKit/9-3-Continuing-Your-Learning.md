@@ -17,7 +17,7 @@
 ## 3. Connecting with Others
 
 - [Apple Developer Forum](https://developer.apple.com/forums/tags/uikit)에서 동료 개발자, 멘토, 애플 엔지니어와 친해지세요. UIKit 태그를 검색하여 시작합니다.
-- [Swift community forums]에 합류하여 곧 나올ㄹ 언어 기능에 대해 논의하고 기여하세요.
+- [Swift community forums](https://forums.swift.org/)에 합류하여 곧 나올 언어 기능에 대해 논의하고 기여하세요.
 - 당신 지역의 iOS 개발자 밋업을 검색하세요.
 
 ## 4. Researching Design
